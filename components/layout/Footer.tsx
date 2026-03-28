@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-
+import logo from "@/public/navbar/logo.jpg";
+import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-white pt-16 pb-8 border-t border-gray-100 font-serif">
@@ -11,7 +12,12 @@ const Footer = () => {
             Store Information
           </h3>
           <ul className="space-y-3 text-[15px] leading-relaxed">
-            <li>Indoors Global</li>
+            <li className="flex flex-col gap-2">
+              <div className="w-20 h-20">
+                <Image src={logo} alt="" />
+              </div>
+              Indoors Global
+            </li>
             <li>99 XY, IN 12345, Beside the Sun point land.</li>
             <li>India</li>
             <li className="pt-2">

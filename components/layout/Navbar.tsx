@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
+import logo from "@/public/navbar/logo.jpg"
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +23,8 @@ const Navbar = () => {
         
         {/* Logo Section */}
         <div className="flex items-center gap-2">
-          <span className="text-2xl md:text-3xl font-medium tracking-tight text-gray-800">
-            Indoors Global
+          <span className="text-2xl md:text-3xl font-medium tracking-tight flex justify-center items-center gap-2 text-gray-800">
+           <div className="w-10 h-10"><Image src={logo} alt=""/></div> Indoors Global
           </span>
         </div>
 

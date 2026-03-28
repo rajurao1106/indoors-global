@@ -12,8 +12,8 @@ export default function page() {
       <Hero />
       <Category />
       <About />
-      <Features/>
-      <Blog/>
+      <Features />
+      <Blog />
       <CTA />
     </div>
   );

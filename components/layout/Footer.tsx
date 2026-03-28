@@ -11,7 +11,7 @@ const Footer = () => {
             Store Information
           </h3>
           <ul className="space-y-3 text-[15px] leading-relaxed">
-            <li>Indoors Global - Art & Craft Store</li>
+            <li>Indoors Global</li>
             <li>99 XY, IN 12345, Beside the Sun point land.</li>
             <li>India</li>
             <li className="pt-2">

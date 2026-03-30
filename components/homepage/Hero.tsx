@@ -54,7 +54,7 @@ export default function HeroSlider() {
                   <h1 className="text-4xl md:text-7xl font-serif text-[#333] leading-[1.1] whitespace-pre-line mb-10">
                     {slide.title}
                   </h1>
-                  <button className="bg-[#a3a393] hover:bg-[#8e8e7e] text-white px-10 py-4 text-sm uppercase tracking-widest transition-all duration-300 shadow-sm">
+                  <button className="bg-[#5D4037] hover:bg-[#8e8e7e] text-white px-10 py-4 text-sm uppercase tracking-widest transition-all duration-300 shadow-sm">
                     {slide.buttonText}
                   </button>
                 </div>

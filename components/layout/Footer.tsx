@@ -18,18 +18,6 @@ const Footer = () => {
               </div>
               Indoors Global
             </li>
-            <li>99 XY, IN 12345, Beside the Sun point land.</li>
-            <li>India</li>
-            <li className="pt-2">
-              Call us:{" "}
-              <span className="font-sans text-gray-500">+91 123-456-789</span>
-            </li>
-            <li>
-              Email us:{" "}
-              <span className="font-sans text-gray-500 underline underline-offset-4">
-                admin@example.com
-              </span>
-            </li>
           </ul>
 
           {/* Manual SVG Icons to avoid Lucide Export Errors */}
@@ -55,22 +43,15 @@ const Footer = () => {
         {/* Find Product */}
         <div>
           <h3 className="text-xl font-medium mb-6 text-black tracking-tight">
-            Find Product
+            Quick Links
           </h3>
           <ul className="space-y-3 text-[15px]">
-            {[
-              "Prices drop",
-              "New products",
-              "Best sellers",
-              "Sitemap",
-              "Stores",
-              "Arts",
-            ].map((item) => (
+            {["Home", "About", "Products", "Blog"].map((item) => (
               <li
                 key={item}
                 className="hover:translate-x-1 transition-transform cursor-pointer hover:text-black"
               >
-                {item}
+                <Link href={item.toLowerCase()}>{item}</Link>
               </li>
             ))}
           </ul>
@@ -79,48 +60,40 @@ const Footer = () => {
         {/* Your Account */}
         <div>
           <h3 className="text-xl font-medium mb-6 text-black tracking-tight">
-            Your Account
+            Categories
           </h3>
           <ul className="space-y-3 text-[15px]">
-            {[
-              "Order Tracking",
-              "Sign in",
-              "Create account",
-              "Discount",
-              "Wishlist",
-              "Credit Slip",
-            ].map((item) => (
-              <li
-                key={item}
-                className="hover:translate-x-1 transition-transform cursor-pointer hover:text-black"
-              >
-                {item}
-              </li>
-            ))}
+            {["Rice Husk", "Bamboo Essentials", "Cane Baskets"].map(
+              (item) => (
+                <li
+                  key={item}
+                  className="hover:translate-x-1 transition-transform cursor-pointer hover:text-black"
+                >
+               <Link href={item.toLowerCase().replace("","-")}>{item}</Link>
+                </li>
+              ),
+            )}
           </ul>
         </div>
 
         {/* Our Company */}
         <div>
           <h3 className="text-xl font-medium mb-6 text-black tracking-tight">
-            Our Company
+            Address
           </h3>
           <ul className="space-y-3 text-[15px]">
-            {[
-              "Delivery",
-              "Legal Notice",
-              "Terms and conditions",
-              "Secure Payment",
-              "Contact Us",
-              "About Us",
-            ].map((item) => (
-              <li
-                key={item}
-                className="hover:translate-x-1 transition-transform cursor-pointer hover:text-black"
-              >
-                {item}
-              </li>
-            ))}
+            <li>99 XY, IN 12345, Beside the Sun point land.</li>
+            <li>India</li>
+            <li className="pt-2">
+              Call us:{" "}
+              <span className="font-sans text-gray-500">+91 123-456-789</span>
+            </li>
+            <li>
+              Email us:{" "}
+              <span className="font-sans text-gray-500 underline underline-offset-4">
+                admin@example.com
+              </span>
+            </li>
           </ul>
         </div>
       </div>
@@ -132,14 +105,6 @@ const Footer = () => {
           <span className="font-semibold italic">Indoors Global</span>. All
           Rights Reserved.
         </p>
-
-        {/* Payment Methods */}
-        {/* <div className="flex gap-3 grayscale opacity-60">
-          <PaymentBadge name="VISA" color="text-blue-800" />
-          <PaymentBadge name="PayPal" color="text-blue-600" />
-          <PaymentBadge name="MasterCard" color="text-red-600" />
-          <PaymentBadge name="Amex" color="text-cyan-700" />
-        </div> */}
       </div>
     </footer>
   );

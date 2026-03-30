@@ -36,7 +36,7 @@ const About = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="bg-[#a68686] text-white px-10 py-3 text-sm tracking-widest uppercase font-sans hover:bg-[#967676] transition-colors">
+            <button className="bg-[#5D4037] hover:bg-[#8e8e7e] text-white px-10 py-3 text-sm tracking-widest uppercase font-sans hover:bg-[#967676] transition-colors">
               Shop
             </button>
             <button className="bg-[#a89d83] text-white px-8 py-3 text-sm tracking-widest uppercase font-sans hover:bg-[#968b72] transition-colors">

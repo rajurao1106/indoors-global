@@ -1,10 +1,7 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { 
   Calendar, 
-  User, 
-  MessageCircle, 
   Search, 
-  ChevronRight, 
   ChevronsRight, 
   Leaf 
 } from 'lucide-react';
@@ -18,8 +15,29 @@ import {
  * Accent (Fresh Sprout): #adc178
  */
 
+// --- Types ---
+interface Post {
+  id: number;
+  title: string;
+  category: string;
+  date: string;
+  views: string;
+  comments: string;
+  image: string;
+  excerpt: string;
+}
+
+interface SidebarSectionProps {
+  title: string;
+  children: ReactNode;
+}
+
+interface BlogCardProps {
+  post: Post;
+}
+
 // --- Mock Data ---
-const posts = [
+const posts: Post[] = [
   {
     id: 1,
     title: "The Art of Sustainable Architecture",
@@ -28,7 +46,7 @@ const posts = [
     views: "1.2k",
     comments: "8",
     image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800",
-    excerpt: "Exploring how natural fibers and organic structures are redefining the modern workspace. A deep dive into the longevity of bamboo construction."
+    excerpt: "Exploring how natural fibers and organic structures are redefining the modern workspace."
   },
   {
     id: 2,
@@ -38,7 +56,7 @@ const posts = [
     views: "940",
     comments: "15",
     image: "https://images.unsplash.com/photo-1528459105426-b9548367069b?auto=format&fit=crop&q=80&w=800",
-    excerpt: "Creating a sanctuary within your home doesn't require vast space, only the right intention and a touch of greenery."
+    excerpt: "Creating a sanctuary within your home doesn't require vast space, only the right intention."
   },
   {
     id: 3,
@@ -48,7 +66,7 @@ const posts = [
     views: "3.5k",
     comments: "42",
     image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800",
-    excerpt: "How the next generation of hardware is moving toward biodegradable components and carbon-neutral manufacturing processes."
+    excerpt: "How the next generation of hardware is moving toward biodegradable components."
   },
   {
     id: 4,
@@ -58,13 +76,13 @@ const posts = [
     views: "820",
     comments: "11",
     image: "https://images.unsplash.com/photo-1528459105426-b9548367069b?auto=format&fit=crop&q=80&w=800",
-    excerpt: "Integrating mindfulness into your daily workflow can increase productivity and reduce the environmental stress of the office."
+    excerpt: "Integrating mindfulness into your daily workflow can increase productivity."
   }
 ];
 
 // --- Sub-Components ---
 
-const SidebarSection = ({ title, children }) => (
+const SidebarSection = ({ title, children }: SidebarSectionProps) => (
   <div className="bg-white p-8 rounded-sm shadow-[0_4px_20px_-10px_rgba(40,54,24,0.1)] border-l-4 border-[#adc178] mb-10">
     <div className="flex items-center mb-6">
       <h4 className="font-serif italic font-bold text-[#283618] text-lg">{title}</h4>
@@ -73,7 +91,7 @@ const SidebarSection = ({ title, children }) => (
   </div>
 );
 
-const BlogCard = ({ post }) => (
+const BlogCard = ({ post }: BlogCardProps) => (
   <div className="group bg-white rounded-sm overflow-hidden border border-[#e9edc9]/50 hover:border-[#adc178] transition-all duration-500 flex flex-col h-full">
     <div className="relative overflow-hidden aspect-[16/10]">
       <img 
@@ -91,12 +109,6 @@ const BlogCard = ({ post }) => (
         <span className="flex items-center gap-1.5">
           <Calendar size={13} /> {post.date}
         </span>
-        {/* <span className="flex items-center gap-1.5">
-          <User size={13} /> {post.views}
-        </span>
-        <span className="flex items-center gap-1.5">
-          <MessageCircle size={13} /> {post.comments}
-        </span> */}
       </div>
 
       <h3 className="text-2xl font-serif font-bold text-[#283618] mb-4 group-hover:text-[#606c38] transition-colors leading-snug">
@@ -120,15 +132,8 @@ const BlogCard = ({ post }) => (
 
 export default function BambooBlog() {
   return (
-    <div className="min-h-screen pt-12 font-sans text-[#283618]">
+    <div className="min-h-screen pt-12 font-sans text-[#283618] bg-[#f8f9f1]">
       <div className="max-w-7xl mx-auto py-16 px-6 lg:px-8">
-        {/* Header Section */}
-        {/* <div className="mb-16 text-center">
-          <h1 className="text-5xl font-serif font-bold mb-4">The Bamboo Journal</h1>
-          <div className="w-24 h-1 bg-[#adc178] mx-auto mb-4"></div>
-          <p className="text-[#606c38] italic">Reflections on nature, design, and mindful living.</p>
-        </div> */}
-
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           {/* Left Column: Blog Grid */}
@@ -188,7 +193,7 @@ export default function BambooBlog() {
 
             {/* Quote Widget */}
             <div className="bg-[#a3a393] p-8 text-center text-[#f8f9f1]">
-                <p className="italic font-serif text-lg mb-4">"The Sustainable products bends stronger than the oak that resists."</p>
+                <p className="italic font-serif text-lg mb-4">The Sustainable products bend stronger than the oak that resists.</p>
                 <div className="text-[10px] tracking-[0.2em] font-bold uppercase">— indoors Global</div>
             </div>
 

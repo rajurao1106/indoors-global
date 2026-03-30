@@ -60,8 +60,15 @@ export default function ProductDetail() {
           <h1 className="text-3xl md:text-4xl font-medium text-gray-900 mb-4">
             {product.name}
           </h1>
-          <p className="text-2xl text-gray-800 mb-6">{product.price || "$20.00"}</p>
-          
+          <p className="text-xl text-gray-800">
+            {/* {product.price || "$20.00"} */}
+            14 X 21cm 
+            </p>
+           <p className="text-xl text-gray-800 mb-2">
+            {/* {product.price || "$20.00"} */}
+            Mint Green ,Royal Blue, Maroon
+
+            </p>
           <div className="border-t border-b border-gray-100 py-6 mb-8 text-gray-600 leading-relaxed">
             <p>
               This {product.name.toLowerCase()} is handcrafted with sustainable materials. 
@@ -72,13 +79,14 @@ export default function ProductDetail() {
 
           <div className="flex flex-wrap gap-4">
             <button className="flex-1 bg-[#a3a393] text-white px-8 py-4 rounded hover:bg-[#8e8e7f] transition-all flex items-center justify-center gap-2 font-medium">
-              <ShoppingCart size={20} /> Add to Cart
+              {/* <ShoppingCart size={20} /> Add to Cart */}
+              Contact Us
             </button>
             <button className="p-4 border border-gray-200 rounded hover:bg-gray-50 transition-colors">
               <Heart size={20} className="text-gray-400" />
             </button>
           </div>
-
+{/* 
           <div className="mt-8 pt-8 border-t border-gray-100">
             <p className="text-sm text-gray-500">
               <span className="font-bold text-gray-800">SKU:</span> PROD-00{product.id}
@@ -86,7 +94,7 @@ export default function ProductDetail() {
             <p className="text-sm text-gray-500 mt-1">
               <span className="font-bold text-gray-800">Shipping:</span> Free delivery on orders over $100
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

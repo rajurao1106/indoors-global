@@ -8,15 +8,15 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-700">
         {/* Store Information */}
         <div>
-          <h3 className="text-xl font-medium mb-6 text-black tracking-tight">
+          {/* <h3 className="text-xl font-medium mb-6 text-black tracking-tight">
             Store Information
-          </h3>
+          </h3> */}
           <ul className="space-y-3 text-[15px] leading-relaxed">
             <li className="flex flex-col gap-2">
               <div className="w-20 h-20">
                 <Image src={logo} alt="" />
               </div>
-              Indoors Global
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </li>
           </ul>
 

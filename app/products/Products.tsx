@@ -6,6 +6,7 @@ import { LayoutGrid, List } from 'lucide-react';
 import product1 from "@/public/homepage/feature3.jpg"
 import product2 from "@/public/homepage/feature2.jpg"
 import product3 from "@/public/homepage/feature1.jpg"
+import Link from 'next/link';
 
 const productsData = [
     { id: 1, name: "Lorem Ipsum Decorative Cushion", img: product1, category: "Rice Husk" },
@@ -92,8 +93,10 @@ export default function Products() {
           ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" 
           : "flex flex-col gap-4"
       }>
-        {filteredProducts.map((product) => (
-          <div 
+        {filteredProducts.map((product) => {
+          const slug = product.name.toLowerCase().replace(/ /g, '-');
+          return (
+          <Link href={`/products/${slug}`}
             key={product.id} 
             className={`group border border-gray-100 rounded-md p-4 bg-white hover:shadow-lg transition-all ${
               viewMode === 'list' ? "flex flex-row items-center gap-6" : "flex flex-col"
@@ -134,8 +137,9 @@ export default function Products() {
                 View Details
               </button>
             )}
-          </div>
-        ))}
+          </Link>
+        );
+        })}
       </div>
 
       {filteredProducts.length === 0 && (

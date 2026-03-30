@@ -49,9 +49,9 @@ export default function Contact() {
               <label className="text-sm font-medium text-gray-700">Inquiry Type</label>
               <select className="col-span-2 border border-gray-300 rounded p-2 text-sm focus:outline-none focus:border-[#a3a393] bg-white">
                 <option value="" disabled selected>Select Category</option>
-                <option value="home-decorative">Home Decorative item</option>
-                <option value="handicraft">Handicraft Items</option>
-                <option value="bamboo">Bamboo Items</option>
+                <option value="Rice Husk">Rice Husk</option>
+                <option value="Bamboo Essentials">Bamboo Essentials</option>
+                <option value="Cane Baskets">Cane Baskets</option>
                 <option value="general">General Inquiry</option>
               </select>
             </div>

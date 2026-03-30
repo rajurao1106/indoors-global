@@ -134,12 +134,12 @@ const Footer = () => {
         </p>
 
         {/* Payment Methods */}
-        <div className="flex gap-3 grayscale opacity-60">
+        {/* <div className="flex gap-3 grayscale opacity-60">
           <PaymentBadge name="VISA" color="text-blue-800" />
           <PaymentBadge name="PayPal" color="text-blue-600" />
           <PaymentBadge name="MasterCard" color="text-red-600" />
           <PaymentBadge name="Amex" color="text-cyan-700" />
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -44,7 +44,7 @@ export default function HeroSlider() {
       <div className="overflow-hidden h-full" ref={emblaRef}>
         <div className="flex h-full">
           {SLIDES.map((slide) => (
-            <div key={slide.id} className="relative flex-[0_0_100%] min-w-0 h-full flex items-start ">
+            <div key={slide.id} className="relative flex-[0_0_100%] min-w-0 h-full flex max-lg:items-start items-center ">
               {/* Content Layer */}
               <div className="container mx-auto px-8 md:px-16  grid grid-cols-1 md:grid-cols-2 items-center z-10">
                 <div className="max-w-2xl">

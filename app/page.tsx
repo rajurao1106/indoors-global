@@ -8,7 +8,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div>
+    <div className="pt-[4rem]">
       <Hero />
       <Category />
       <About />

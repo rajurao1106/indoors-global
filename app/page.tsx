@@ -8,7 +8,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="pt-[5rem]">
+    <div className="max-lg:pt-[4rem] pt-[5rem]">
       <Hero />
       <Category />
       <About />

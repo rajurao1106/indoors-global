@@ -36,10 +36,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100 font-serif shadow-sm">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-8 py-4 max-lg:py-2">
+      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-8 py-3 max-lg:py-2">
         {/* Logo Section */}
         <div className="flex items-end gap-2 justify-end">
-          <div className="w-14 h-14 max-lg:w-10 max-lg:h-10 relative">
+          <div className="w-14 h-14 mb-1 max-lg:w-10 max-lg:h-10 relative">
             <Image
               src={logo}
               alt="Indoors Global Logo"
@@ -47,7 +47,7 @@ const Navbar = () => {
               className="object-contain"
             />
           </div>
-          <span className="text-2xl md:text-3xl font-medium tracking-tight text-gray-800">
+          <span className="text-xl md:text-3xl font-medium tracking-tight text-gray-800">
             Indoors Global
           </span>
         </div>

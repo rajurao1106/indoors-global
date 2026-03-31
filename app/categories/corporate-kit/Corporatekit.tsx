@@ -7,7 +7,7 @@ import bamboo_essentials7 from "@/public/products/Bamboo Essentials/bamboo-essen
 import rice_husk3 from "@/public/products/Rice Husk/rice-husk3.jpeg"
 import rice_husk7 from "@/public/products/Rice Husk/rice-husk7.jpeg"
 import rice_husk8 from "@/public/products/Rice Husk/rice-husk8.jpeg"
-import rice_husk10 from "@/public/products/Rice Husk/rice-husk10.jpeg"
+// import rice_husk10 from "@/public/products/Rice Husk/rice-husk10.jpeg"
 import rice_husk12 from "@/public/products/Rice Husk/rice-husk12.jpeg"
 
 // CORPORATE KIT products based on word file
@@ -36,12 +36,12 @@ const products = [
     description: 'Sustainable writing tools that can be planted after use.',
     image: bamboo_essentials4,
   },
-  {
-    id: 5,
-    name: 'Big Box / Hamper Box',
-    description: 'Sustainable storage box for corporate gifting.',
-    image: rice_husk10,
-  },
+//   {
+//     id: 5,
+//     name: 'Big Box / Hamper Box',
+//     description: 'Sustainable storage box for corporate gifting.',
+//     image: rice_husk10,
+//   },
   {
     id: 6,
     name: 'Chai Cup Set',

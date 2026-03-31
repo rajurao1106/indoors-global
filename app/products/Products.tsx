@@ -35,7 +35,7 @@ import rice_husk6 from "@/public/products/Rice Husk/rice-husk6.jpeg"
 import rice_husk7 from "@/public/products/Rice Husk/rice-husk7.jpeg"
 import rice_husk8 from "@/public/products/Rice Husk/rice-husk8.jpeg"
 import rice_husk9 from "@/public/products/Rice Husk/rice-husk9.jpeg"
-import rice_husk10 from "@/public/products/Rice Husk/rice-husk10.jpeg"
+// import rice_husk10 from "@/public/products/Rice Husk/rice-husk10.jpeg"
 import rice_husk11 from "@/public/products/Rice Husk/rice-husk11.jpeg"
 import rice_husk12 from "@/public/products/Rice Husk/rice-husk12.jpeg"
 import rice_husk13 from "@/public/products/Rice Husk/rice-husk13.jpeg"
@@ -74,7 +74,7 @@ const productsData = [
   { id: 25, name: "Snack plate", img: rice_husk7, category: "Rice Husk" },
   { id: 26, name: "Cutting Chai Cup", img: rice_husk8, category: "Rice Husk" },
   { id: 27, name: "Dinner Set", img: rice_husk9, category: "Rice Husk" },
-  { id: 28, name: "Storage Basket", img: rice_husk10, category: "Rice Husk" },
+  // { id: 28, name: "Storage Basket", img: rice_husk10, category: "Rice Husk" },
   { id: 29, name: "Majestic Mug", img: rice_husk11, category: "Rice Husk" },
   { id: 30, name: "Retro Cup", img: rice_husk12, category: "Rice Husk" },
   { id: 31, name: "Deco planter", img: rice_husk13, category: "Rice Husk" },

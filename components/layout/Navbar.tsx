@@ -40,7 +40,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="flex items-center gap-2">
           <Link href={"/"} className="flex justify-center items-center gap-2">
-            <div className="w-20 h-20 relative">
+            <div className="w-20 h-20 max-lg:w-14 max-lg:h-14 relative">
               <Image src={logo} alt="Indoors Global Logo" fill className="object-contain" />
             </div>
           </Link>

@@ -1,21 +1,19 @@
 import Image from "next/image";
-import about from "@/public/about/about2.jpg"
+import about from "@/public/about/about2.jpg";
 
 export default function OurMission() {
   return (
     <section className="flex flex-col md:flex-row min-h-[600px] w-full bg-white font-sans overflow-hidden">
       {/* --- LEFT SIDE: IMAGE CONTAINER --- */}
-      <div className="relative w-full md:w-1/2 bg-[#F7F7F7] flex items-center justify-center min-h-[400px]">
-        {/* Main Background Image */}
-        <div className="relative w-full h-full">
-          <Image
-            src={about} // Ensure your image is in /public
-            alt="Product Showcase"
-            fill
-            className="object-cover object-center"
-            priority
-          />
-        </div>
+      <div className="relative w-full md:w-1/2 bg-[#F7F7F7] h-[400px] md:h-auto">
+        <Image
+          src={about}
+          alt="Product Showcase"
+          fill
+          className="object-cover"
+          priority
+          sizes="(max-width: 768px) 100vw, 50vw" // Responsive sizing optimize karta hai
+        />
       </div>
 
       {/* --- RIGHT SIDE: CONTENT CONTAINER --- */}
@@ -28,7 +26,7 @@ export default function OurMission() {
 
           {/* Main Heading */}
           <h2 className="text-4xl md:text-5xl font-light tracking-wider mb-10 leading-tight">
-           Eco-Friendly Products for a Better Tomorrow
+            Eco-Friendly Products for a Better Tomorrow
           </h2>
 
           {/* Paragraphs with Lorem Text */}
@@ -54,7 +52,7 @@ export default function OurMission() {
 
           {/* Action Link */}
           <div className="mt-12">
-          <button className="bg-[#5D4037] hover:bg-[#8e8e7e] text-white px-10 py-3 text-sm tracking-widest uppercase font-sans hover:bg-[#967676] transition-colors">
+            <button className="bg-[#5D4037] hover:bg-[#8e8e7e] text-white px-10 py-3 text-sm tracking-widest uppercase font-sans hover:bg-[#967676] transition-colors">
               Shop
             </button>
           </div>

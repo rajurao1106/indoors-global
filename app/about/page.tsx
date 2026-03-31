@@ -7,7 +7,7 @@ import CTA from "@/components/homepage/CTA";
 
 export default function page() {
   return (
-    <div className="pt-[5rem]">
+    <div className="pt-[5rem] max-lg:pt-[4rem]">
       <OurMission />
       <About />
       <Quote />

@@ -5,7 +5,7 @@ import Features from '../about/Features'
 
 export default function page() {
   return (
-    <div className='pt-[4rem]'>
+    <div className='pt-[5rem] max-lg:pt-[4rem]'>
       <Products/>
       <Features/>
       <CTA/>

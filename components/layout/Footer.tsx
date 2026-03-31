@@ -13,7 +13,7 @@ const Footer = () => {
           </h3> */}
           <ul className="space-y-3 text-[15px] leading-relaxed">
             <li className="flex flex-col gap-2">
-              <div className="w-30 h-30 mb-2">
+              <div className="w-30 h-30 max-lg:w-20 max-lg:h-20 mb-2">
                 <Image src={logo} alt="" />
               </div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do

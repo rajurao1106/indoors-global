@@ -36,14 +36,20 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100 font-serif shadow-sm">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-8 py-2">
+      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-8 py-4 max-lg:py-2">
         {/* Logo Section */}
-        <div className="flex items-center gap-2">
-          <Link href={"/"} className="flex justify-center items-center gap-2">
-            <div className="w-20 h-20 max-lg:w-14 max-lg:h-14 relative">
-              <Image src={logo} alt="Indoors Global Logo" fill className="object-contain" />
-            </div>
-          </Link>
+        <div className="flex items-end gap-2 justify-end">
+          <div className="w-14 h-14 max-lg:w-10 max-lg:h-10 relative">
+            <Image
+              src={logo}
+              alt="Indoors Global Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <span className="text-2xl md:text-3xl font-medium tracking-tight text-gray-800">
+            Indoors Global
+          </span>
         </div>
 
         {/* Desktop Navigation */}
@@ -72,7 +78,9 @@ const Navbar = () => {
               {link.hasDropdown && (
                 <div
                   className={`absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl transition-all duration-300 ${
-                    isDropdownOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                    isDropdownOpen
+                      ? "opacity-100 visible translate-y-0"
+                      : "opacity-0 invisible -translate-y-2"
                   }`}
                 >
                   <div className="py-2">
@@ -131,7 +139,9 @@ const Navbar = () => {
                       className={`${isDropdownOpen ? "rotate-180" : ""} transition-transform`}
                     />
                   </button>
-                  <div className={`${isDropdownOpen ? "block" : "hidden"} bg-gray-50 py-2 transition-all`}>
+                  <div
+                    className={`${isDropdownOpen ? "block" : "hidden"} bg-gray-50 py-2 transition-all`}
+                  >
                     {link.subItems.map((sub) => (
                       <Link
                         key={sub.name}

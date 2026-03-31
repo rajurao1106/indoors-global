@@ -27,7 +27,7 @@ const CTA = () => {
        <button className="bg-white px-8 py-3 transition-all">
             Shop Now
           </button>
-           <button className="bg-[#a3a393] text-white px-8 py-3 hover:bg-black transition-all">
+           <button className="bg-[#a3a393] hover:bg-[#7cb140] text-white px-8 py-3 transition-all">
             About Us
           </button>
      </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import logo from "@/public/navbar/logo.jpg";
+import logo from "@/public/navbar/logo.png";
 import Image from "next/image";
 const Footer = () => {
   return (
@@ -13,10 +13,11 @@ const Footer = () => {
           </h3> */}
           <ul className="space-y-3 text-[15px] leading-relaxed">
             <li className="flex flex-col gap-2">
-              <div className="w-20 h-20">
+              <div className="w-30 h-30 mb-2">
                 <Image src={logo} alt="" />
               </div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </li>
           </ul>
 
@@ -63,16 +64,22 @@ const Footer = () => {
             Categories
           </h3>
           <ul className="space-y-3 text-[15px]">
-            {["Rice Husk", "Bamboo Essentials", "Cane Baskets"].map(
-              (item) => (
-                <li
-                  key={item}
-                  className="hover:translate-x-1 transition-transform cursor-pointer hover:text-black"
-                >
-               <Link href={item.toLowerCase().replace("","-")}>{item}</Link>
-                </li>
-              ),
-            )}
+            {[
+              "Bathroom Kit",
+              "Children Kit",
+              "Towel Kit",
+              "Self-Care Kit",
+              "Corporate Kit",
+              "Dinner Set Kit",
+              "Stationery Kit",
+            ].map((item) => (
+              <li
+                key={item}
+                className="hover:translate-x-1 transition-transform cursor-pointer hover:text-black"
+              >
+                <Link href={`categories/${item.toLowerCase().replace(" ", "-")}`}>{item}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 

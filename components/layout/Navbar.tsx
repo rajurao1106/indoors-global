@@ -1,19 +1,24 @@
-"use client"; // Required for state in Next.js App Router
+"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
-import logo from "@/public/navbar/logo.jpg";
+import logo from "@/public/navbar/logo.png";
 import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  // Aapki specific list ke hisaab se categories
   const categories = [
-    { name: "Rice Husk", href: "/categories/home-decor" },
-    { name: "Bamboo Essentials", href: "/categories/bamboo-items" },
-    { name: "Cane Baskets", href: "/categories/handicrafts" },
+    { name: "SELF - CARE KIT", href: "/categories/self-care-kit" },
+    { name: "BATHROOM KIT", href: "/categories/bathroom-kit" },
+    { name: "CHILDREN KIT", href: "/categories/children-kit" },
+    { name: "TOWEL KIT", href: "/categories/towel-kit" },
+    { name: "CORPORATE KIT", href: "/categories/corporate-kit" },
+    { name: "DINNER SET KIT", href: "/categories/dinner-set-kit" },
+    { name: "STATIONERY KIT", href: "/categories/stationery-kit" },
   ];
 
   const navLinks = [
@@ -31,21 +36,17 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100 font-serif shadow-sm">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-8 py-4">
+      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-8 py-2">
         {/* Logo Section */}
         <div className="flex items-center gap-2">
-          <Link
-            href={"/"}
-            className="text-2xl md:text-3xl font-medium tracking-tight flex justify-center items-center gap-2 text-gray-800"
-          >
-            <div className="w-10 h-10">
-              <Image src={logo} alt="Indoors Global Logo" />
+          <Link href={"/"} className="flex justify-center items-center gap-2">
+            <div className="w-20 h-20 relative">
+              <Image src={logo} alt="Indoors Global Logo" fill className="object-contain" />
             </div>
-            Indoors Global
           </Link>
         </div>
 
-        {/* Desktop Navigation Links */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8 text-[15px] text-gray-700">
           {navLinks.map((link) => (
             <div
@@ -56,13 +57,13 @@ const Navbar = () => {
             >
               <Link
                 href={link.href}
-                className="flex items-center gap-1 hover:text-black transition-colors py-2"
+                className="flex items-center gap-1 hover:text-black transition-colors py-2 uppercase tracking-wide"
               >
                 {link.name}
                 {link.hasDropdown && (
                   <ChevronDown
                     size={14}
-                    className={`transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}
                   />
                 )}
               </Link>
@@ -70,33 +71,36 @@ const Navbar = () => {
               {/* Desktop Dropdown */}
               {link.hasDropdown && (
                 <div
-                  className={`absolute left-0 mt-0 w-56 bg-white border border-gray-100 shadow-lg transition-all duration-200 ${isDropdownOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"}`}
+                  className={`absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl transition-all duration-300 ${
+                    isDropdownOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                  }`}
                 >
-                  {link.subItems.map((sub) => (
-                    <Link
-                      key={sub.name}
-                      href={sub.href}
-                      className="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition-colors border-b last:border-0 border-gray-50"
-                    >
-                      {sub.name}
-                    </Link>
-                  ))}
+                  <div className="py-2">
+                    {link.subItems.map((sub) => (
+                      <Link
+                        key={sub.name}
+                        href={sub.href}
+                        className="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition-colors border-b last:border-0 border-gray-50 text-sm font-medium"
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
           ))}
         </div>
 
-        {/* Desktop CTA & Mobile Toggle */}
+        {/* CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
           <Link
             href={"/contact"}
-            className="hidden sm:block bg-[#a3a393] hover:bg-[#8e8e7e] text-white px-6 md:px-8 py-3 md:py-4 text-[10px] md:text-xs uppercase tracking-widest transition-all duration-300 shadow-sm"
+            className="hidden sm:block bg-[#a3a393] hover:bg-[#7cb140] text-white px-6 md:px-8 py-3 md:py-4 text-[10px] md:text-xs uppercase tracking-widest transition-all duration-300"
           >
             Shop Patterns
           </Link>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 text-gray-700"
             onClick={() => setIsOpen(!isOpen)}
@@ -108,7 +112,9 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`md:hidden bg-white border-b border-gray-100 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}
+        className={`md:hidden bg-white border-b border-gray-100 overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
         <div className="flex flex-col p-6 gap-2 text-gray-700">
           {navLinks.map((link) => (
@@ -117,7 +123,7 @@ const Navbar = () => {
                 <>
                   <button
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    className="w-full text-lg font-medium border-b border-gray-50 pb-2 flex justify-between items-center"
+                    className="w-full text-lg font-medium border-b border-gray-50 pb-2 flex justify-between items-center uppercase"
                   >
                     {link.name}
                     <ChevronDown
@@ -125,15 +131,13 @@ const Navbar = () => {
                       className={`${isDropdownOpen ? "rotate-180" : ""} transition-transform`}
                     />
                   </button>
-                  <div
-                    className={`${isDropdownOpen ? "block" : "hidden"} bg-gray-50 py-2`}
-                  >
+                  <div className={`${isDropdownOpen ? "block" : "hidden"} bg-gray-50 py-2 transition-all`}>
                     {link.subItems.map((sub) => (
                       <Link
                         key={sub.name}
                         href={sub.href}
                         onClick={() => setIsOpen(false)}
-                        className="block px-6 py-3 text-base text-gray-600 border-b last:border-0 border-gray-100"
+                        className="block px-6 py-3 text-sm text-gray-600 border-b last:border-0 border-gray-100"
                       >
                         {sub.name}
                       </Link>
@@ -144,14 +148,14 @@ const Navbar = () => {
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium border-b border-gray-50 pb-2 flex justify-between items-center"
+                  className="text-lg font-medium border-b border-gray-50 pb-2 flex justify-between items-center uppercase"
                 >
                   {link.name}
                 </Link>
               )}
             </div>
           ))}
-          <button className="mt-4 bg-[#A5D6A7] text-white py-4 text-xs uppercase tracking-widest">
+          <button className="mt-4 bg-[#a3a393] text-white py-4 text-xs uppercase tracking-widest">
             Shop Patterns
           </button>
         </div>

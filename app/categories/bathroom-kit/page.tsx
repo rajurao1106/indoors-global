@@ -1,10 +1,11 @@
 import React from "react";
-import Bambooitems from "./Bambooitems";
+import Bathroomkit from "./Bathroomkit";
+
 
 export default function page() {
   return (
     <div className="pt-[5rem]">
-      <Bambooitems />
+     <Bathroomkit/>
     </div>
   );
 }

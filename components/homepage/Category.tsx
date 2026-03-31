@@ -2,25 +2,55 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import hero1 from "@/public/homepage/hero1.png"
+
+// Images imports
+import bamboo_essentials3 from "@/public/products/Bamboo Essentials/bamboo-essentials3.jpeg";
+import bamboo_essentials1 from "@/public/products/Bamboo Essentials/bamboo-essentials1.jpeg";
+import bamboo_essentials4 from "@/public/products/Bamboo Essentials/bamboo-essentials4.jpeg";
+import bamboo_essentials7 from "@/public/products/Bamboo Essentials/bamboo-essentials7.jpeg";
+import bamboo_essentials9 from "@/public/products/Bamboo Essentials/bamboo-essentials9.jpeg";
 
 const categories = [
-  { name: "Home Decor", image: hero1 },
-  { name: "Mirror Art", image: hero1 },
-  { name: "Decorative Mirrors", image: hero1 },
-  { name: "Decorative Items", image: hero1 },
-  { name: "Vase Collection", image: hero1 },
-  { name: "Ekaani", image: hero1 },
-  { name: "Decorative Trays", image: hero1 },
-  { name: "Torans", image: hero1 },
-
+  { 
+    name: "Bathroom Kit", 
+    image: bamboo_essentials1, 
+    description: "Eco-friendly essentials for a sustainable morning routine." 
+  },
+  { 
+    name: "Children Kit", 
+    image: bamboo_essentials4, 
+    description: "Gentle and safe bamboo products for your little ones." 
+  },
+  { 
+    name: "Towel Kit", 
+    image: bamboo_essentials7, 
+    description: "Ultra-soft, antibacterial bamboo fiber towels." 
+  },
+  { 
+    name: "Self-Care Kit", 
+    image: bamboo_essentials3, 
+    description: "Pamper yourself with the goodness of pure nature." 
+  },
+  { 
+    name: "Corporate Kit", 
+    image: bamboo_essentials1, 
+    description: "Professional and sustainable gifting solutions." 
+  },
+  { 
+    name: "Dinner Set Kit", 
+    image: bamboo_essentials4, 
+    description: "Elegant, durable, and plastic-free dining experience." 
+  },
+  { 
+    name: "Stationery Kit", 
+    image: bamboo_essentials9, 
+    description: "Sustainable tools for your creative ideas." 
+  },
 ];
 
 const Category = () => {
-  // 1. Ref create karein scroll container ke liye
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // 2. Scroll function likhein
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
@@ -36,9 +66,10 @@ const Category = () => {
   return (
     <section className="max-w-7xl mx-auto px-8 py-16 font-serif">
       <div className="flex justify-between items-center mb-10">
-        <h2 className="text-3xl text-gray-800 font-medium max-lg:text-xl">Shop By Category</h2>
+        <h2 className="text-3xl text-gray-800 font-medium max-lg:text-xl">
+          Shop By Category
+        </h2>
 
-        {/* 3. Buttons mein onClick add karein */}
         <div className="flex gap-2">
           <button
             onClick={() => scroll("left")}
@@ -55,7 +86,6 @@ const Category = () => {
         </div>
       </div>
 
-      {/* 4. Ref ko yahan attach karein aur overflow-x-auto use karein */}
       <div className="border border-gray-100 rounded-lg p-6 md:p-10 bg-white">
         <div
           ref={scrollRef}
@@ -65,11 +95,9 @@ const Category = () => {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[240px] flex flex-col items-center group cursor-pointer snap-start"
+              className="flex-shrink-0 w-[260px] group cursor-pointer "
             >
-              <div className="relative w-full aspect-square mb-6 overflow-hidden rounded-xl bg-gray-50">
-                {/* Image placeholder agar real image nahi hai toh */}
-                <div className="absolute inset-0 bg-gray-200 animate-pulse group-hover:hidden" />
+              <div className="relative w-full aspect-square mb-3 overflow-hidden rounded-xl bg-gray-50">
                 <Image
                   src={category.image}
                   alt={category.name}
@@ -78,9 +106,15 @@ const Category = () => {
                 />
               </div>
 
-              <h3 className="text-lg text-gray-800 mb-1 font-semibold text-center">
+              <h3 className="text-lg text-gray-800 mb-1 font-semibold">
                 {category.name}
               </h3>
+              
+              {/* Description Section */}
+              <p className="text-sm text-gray-500 mb-4 line-clamp-2">
+                {category.description}
+              </p>
+
               <button className="text-[13px] text-gray-400 underline underline-offset-4 hover:text-black transition-colors">
                 View More
               </button>

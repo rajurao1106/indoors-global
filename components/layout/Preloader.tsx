@@ -28,7 +28,7 @@ export default function Preloader() {
       </div>
       
       {/* Optional: Keep the text below the image */}
-      <h1 className="mt-4 text-xl tracking-wider">Indoors Global</h1>
+      <h1 className="mt-4 text-base tracking-wider">Indoors Global</h1>
     </div>
   );
 }

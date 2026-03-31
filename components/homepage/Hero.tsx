@@ -12,7 +12,7 @@ const SLIDES = [
   {
     id: 1,
     subtitle: "Top Trending Products",
-    title: "Best Modern \nWood Collection",
+    title: "Best Modern Wood Collection",
     // --- Added Description ---
     description: "Discover the perfect blend of contemporary design and timeless craftsmanship for your living space.",
     image: hero1,
@@ -51,7 +51,7 @@ export default function HeroSlider() {
               
               {/* Content Layer */}
               <div className="container mx-auto px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 items-center z-10">
-                <div className="max-w-2xl max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:pt-20 max-lg:items-center">
+                <div className="max-w-2xl max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:pt-10 max-lg:items-center">
                   <p className="text-[#8b8b8b] text-sm md:text-base mb-4 font-medium italic tracking-wide">
                     {slide.subtitle}
                   </p>

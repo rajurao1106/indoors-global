@@ -38,7 +38,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100 font-serif shadow-sm">
       <div className="max-w-[1440px] mx-auto flex items-end justify-between px-6 md:px-8 pb-3 pt-1 max-lg:py-2">
         {/* Logo Section */}
-        <div className="flex items-end gap-1 justify-end">
+        <Link href={"/"} className="flex items-end gap-1 justify-end">
           <div className="w-14 h-14 mb-1 max-lg:w-10 max-lg:h-10 relative">
             <Image
               src={logo}
@@ -50,7 +50,7 @@ const Navbar = () => {
           <span className="text-xl md:text-3xl font-medium tracking-tight text-gray-800">
             Indoors Global
           </span>
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8 text-[15px] text-gray-700">

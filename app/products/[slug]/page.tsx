@@ -101,7 +101,7 @@ export default function ProductDetail() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16 font-sans text-[#444]">
+    <div className="max-w-7xl mx-auto px-4 py-16 pt-24 font-sans text-[#444]">
       <Link href="/products" className="flex items-center gap-2 text-sm text-gray-500 mb-8 hover:text-black transition-colors w-fit">
         <ArrowLeft size={16} /> Back to Collection
       </Link>

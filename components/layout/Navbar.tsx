@@ -13,12 +13,12 @@ const Navbar = () => {
   // Aapki specific list ke hisaab se categories
   const categories = [
     { name: "SELF - CARE KIT", href: "/categories/self-care-kit" },
-    { name: "BATHROOM KIT", href: "/categories/bathroom-kit" },
+    { name: "TOILETRY KIT", href: "/categories/toiletry-kit" },
     { name: "CHILDREN KIT", href: "/categories/children-kit" },
-    { name: "TOWEL KIT", href: "/categories/towel-kit" },
+    { name: "HAND TOWEL SET", href: "/categories/towel-kit" },
     { name: "CORPORATE KIT", href: "/categories/corporate-kit" },
-    { name: "DINNER SET KIT", href: "/categories/dinner-set-kit" },
-    { name: "STATIONERY KIT", href: "/categories/stationery-kit" },
+    { name: "RICEHUSK DINNER SET", href: "/categories/dinner-set" },
+    { name: "PLANTABLE STATIONERY KIT", href: "/categories/stationery-kit" },
   ];
 
   const navLinks = [

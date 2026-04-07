@@ -6,6 +6,7 @@ import Feature3 from "@/public/homepage/feature3.jpg";
 import hero3 from "@/public/homepage/hero3.png";
 import cane_baskets1 from "@/public/products/Cane Baskets/cane-baskets1.jpeg"
 import rice_husk11 from "@/public/products/Rice Husk/rice-husk11.jpeg"
+import Link from "next/link";
 
 const Features = () => {
   return (
@@ -40,9 +41,9 @@ const Features = () => {
             <h2 className="text-4xl md:text-5xl text-white leading-tight mb-8">
               Bamboo Essentials 
             </h2>
-            <button className="bg-[#a3a895] text-white px-8 py-3 uppercase tracking-widest text-xs font-sans font-bold hover:bg-[#7cb140] transition-colors">
+            <Link href={"/products"} className="bg-[#a3a895] text-white px-8 py-3 uppercase tracking-widest text-xs font-sans font-bold hover:bg-[#7cb140] transition-colors">
               Shop Now
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -66,9 +67,9 @@ const Features = () => {
               <h3 className="text-3xl text-white mb-6">
                 Rice Husk
               </h3>
-              <button className="bg-[#a3a895] text-white px-8 py-3 uppercase tracking-widest text-xs font-sans font-bold hover:bg-[#7cb140] transition-colors">
+              <Link href={"/products"} className="bg-[#a3a895] text-white px-8 py-3 uppercase tracking-widest text-xs font-sans font-bold hover:bg-[#7cb140] transition-colors">
               Shop Now
-            </button>
+            </Link>
             </div>
           </div>
 
@@ -90,9 +91,9 @@ const Features = () => {
               <h3 className="text-3xl text-white mb-6">
                 Cane Baskets
               </h3>
-               <button className="bg-[#a3a895] text-white px-8 py-3 uppercase tracking-widest text-xs font-sans font-bold hover:bg-[#7cb140] transition-colors">
+               <Link href={"/products"} className="bg-[#a3a895] text-white px-8 py-3 uppercase tracking-widest text-xs font-sans font-bold hover:bg-[#7cb140] transition-colors">
               Shop Now
-            </button>
+            </Link>
             </div>
           </div>
         </div>

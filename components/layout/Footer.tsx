@@ -23,10 +23,12 @@ const Footer = () => {
 
           {/* Manual SVG Icons to avoid Lucide Export Errors */}
           <div className="flex gap-3 mt-8">
-            <SocialIcon label="Facebook">
-              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            <SocialIcon label="Instagram">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
             </SocialIcon>
-            <SocialIcon label="Twitter">
+            {/* <SocialIcon label="Twitter">
               <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
             </SocialIcon>
             <SocialIcon label="Instagram">
@@ -37,7 +39,7 @@ const Footer = () => {
             <SocialIcon label="Pinterest">
               <circle cx="12" cy="12" r="10" />
               <path d="M8 12c.2 2.5 1.8 3.5 3 3.5 1.6 0 2.8-1.1 2.8-2.6 0-1.7-1.3-3-3.2-3-2.1 0-3.6 1.4-3.6 3.4 0 1.2.5 2.2 1.4 2.6.2.1.3.1.4-.2l.2-.7c0-.2 0-.3-.1-.5-.4-.5-.6-1.2-.6-2 0-2 1.6-3.8 3.8-3.8 2.1 0 3.6 1.4 3.6 3.4 0 2.2-1.2 4.1-3 4.1-.6 0-1.2-.3-1.4-.7l-.4 1.5c-.2.7-.8 1.8-1.2 2.5" />
-            </SocialIcon>
+            </SocialIcon> */}
           </div>
         </div>
 
@@ -65,19 +67,21 @@ const Footer = () => {
           </h3>
           <ul className="space-y-3 text-[15px]">
             {[
-              "Bathroom Kit",
-              "Children Kit",
-              "Towel Kit",
-              "Self-Care Kit",
-              "Corporate Kit",
-              "Dinner Set Kit",
-              "Stationery Kit",
+              "Rice Husk",
+              "Bamboo Essentials",
+              "Cane Baskets",
+              "Eco-Friendly Kits",
             ].map((item) => (
               <li
                 key={item}
                 className="hover:translate-x-1 transition-transform cursor-pointer hover:text-black"
               >
-                <Link href={`categories/${item.toLowerCase().replace(" ", "-")}`}>{item}</Link>
+                <Link
+                  // href={`categories/${item.toLowerCase().replace(" ", "-")}`}
+                    href={`/products`}
+                >
+                  {item}
+                </Link>
               </li>
             ))}
           </ul>
@@ -89,18 +93,21 @@ const Footer = () => {
             Address
           </h3>
           <ul className="space-y-3 text-[15px]">
-            <li>99 XY, IN 12345, Beside the Sun point land.</li>
-            <li>India</li>
+            <li>
+              1st Floor Shop No. 1 & 2 Royal Arcade Building Near Khamardih
+              Thana, Shankar Nagar Raipur{" "}
+            </li>
+
             <li className="pt-2">
               Call us:{" "}
-              <span className="font-sans text-gray-500">+91 123-456-789</span>
+              <span className="font-sans text-gray-500">+91 6268223779</span>
             </li>
-            <li>
+            {/* <li>
               Email us:{" "}
               <span className="font-sans text-gray-500 underline underline-offset-4">
                 admin@example.com
               </span>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

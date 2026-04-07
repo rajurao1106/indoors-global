@@ -6,7 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import hero1 from "@/public/homepage/hero3.png";
-import hero2 from "@/public/homepage/hero2.png";
+import hero2 from "@/public/homepage/hero4.png";
 
 const SLIDES = [
   {
@@ -21,9 +21,10 @@ const SLIDES = [
   {
     id: 2,
     subtitle: "Best Wooden Products",
-    title: "New Sell Handmade \nCollection",
+    // title: "New Sell Handmade \nCollection",
+    title:"Conscious Living, Beautifully Crafted",
     // --- Added Description ---
-    description: "Ethically sourced, artisan-crafted pieces that bring the warmth of nature directly into your home.",
+    description: "From bamboo hydration to artisanal dinnerware, bring home ethically sourced pieces designed for a modern, eco-conscious home.",
     image: hero2,
     buttonText: "Shop Now",
   },

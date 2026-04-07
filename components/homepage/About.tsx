@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import about from "@/public/homepage/about.jpg"
+import about from "@/public/products/Cane Baskets/cane-baskets5.jpeg"
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -36,12 +37,12 @@ const About = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="bg-[#5D4037] hover:bg-[#8e8e7e] text-white px-10 py-3 text-sm tracking-widest uppercase font-sans transition-colors">
+            <Link href={"/"} className="bg-[#5D4037] hover:bg-[#8e8e7e] text-white px-10 py-3 text-sm tracking-widest uppercase font-sans transition-colors">
               Shop
-            </button>
-            <button className="bg-[#a89d83] hover:bg-[#7cb140] text-white px-8 py-3 text-sm tracking-widest uppercase font-sans  transition-colors">
-              The Little Studio
-            </button>
+            </Link>
+            <Link href={"/about"}  className="bg-[#a89d83] hover:bg-[#7cb140] text-white px-8 py-3 text-sm tracking-widest uppercase font-sans  transition-colors">
+              About Us
+            </Link>
           </div>
         </div>
       </div>

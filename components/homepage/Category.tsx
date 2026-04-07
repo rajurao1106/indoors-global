@@ -5,54 +5,50 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Images imports
-import bamboo_essentials3 from "@/public/products/Bamboo Essentials/bamboo-essentials3.jpeg";
-import bamboo_essentials1 from "@/public/products/Bamboo Essentials/bamboo-essentials1.jpeg";
-import bamboo_essentials4 from "@/public/products/Bamboo Essentials/bamboo-essentials4.jpeg";
-import bamboo_essentials7 from "@/public/products/Bamboo Essentials/bamboo-essentials7.jpeg";
-import bamboo_essentials9 from "@/public/products/Bamboo Essentials/bamboo-essentials9.jpeg";
+import toiletry_kit from "@/public/homepage/toiletry-kit1.jpeg";
+import childrens_kit from "@/public/homepage/childrens-kit1.jpeg";
+import hand_towel_set from "@/public/homepage/hand-towel-set.jpeg";
+import ricehusk_dinner_set from "@/public/homepage/ricehusk-dinner-set.jpeg";
+import corporate_kit from "@/public/homepage/corporate-kit.jpeg";
+import plantable_stationary_kit from "@/public/homepage/plantable-stationary-kit.jpeg";
 
 const categories = [
   { 
-    name: "Bathroom Kit", 
-    slug: "bathroom-kit",
-    image: bamboo_essentials1, 
+    name: "Toiletry kit", 
+    slug: "toiletry-kit",
+    image: toiletry_kit, 
     description: "Eco-friendly essentials for a sustainable morning routine." 
   },
   { 
-    name: "Children Kit", 
+    name: "Children's kit", 
     slug: "children-kit",
-    image: bamboo_essentials4, 
+    image: childrens_kit, 
     description: "Gentle and safe bamboo products for your little ones." 
-  },
-  { 
-    name: "Towel Kit", 
-    slug: "towel-kit",
-    image: bamboo_essentials7, 
-    description: "Ultra-soft, antibacterial bamboo fiber towels." 
-  },
-  { 
-    name: "Self-Care Kit", 
-    slug: "self-care-kit",
-    image: bamboo_essentials3, 
-    description: "Pamper yourself with the goodness of pure nature." 
   },
   { 
     name: "Corporate Kit", 
     slug: "corporate-kit",
-    image: bamboo_essentials1, 
+    image: corporate_kit, 
     description: "Professional and sustainable gifting solutions." 
   },
-  { 
-    name: "Dinner Set Kit", 
-    slug: "dinner-set-kit",
-    image: bamboo_essentials4, 
+   { 
+    name: "Ricehusk Dinner Set", 
+    slug: "dinner-set",
+    image: ricehusk_dinner_set, 
     description: "Elegant, durable, and plastic-free dining experience." 
   },
   { 
-    name: "Stationery Kit", 
+    name: "Plantable Stationery kit", 
     slug: "stationery-kit",
-    image: bamboo_essentials9, 
-    description: "Sustainable tools for your creative ideas." 
+    image: plantable_stationary_kit, 
+    description: "Eco-friendly stationery that grows into plants after use." 
+  },
+  
+  { 
+    name: "Hand Towel Set", 
+    slug: "towel-set",
+    image: hand_towel_set, 
+    description: "Ultra-soft, antibacterial bamboo fiber towels." 
   },
 ];
 
@@ -122,7 +118,7 @@ const Category = () => {
                   fill
                   placeholder="blur"
                   sizes="260px"
-                  className="object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                  className=" group-hover:scale-110 transition-transform duration-700 ease-in-out"
                 />
               </div>
 

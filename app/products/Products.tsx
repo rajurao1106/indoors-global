@@ -42,26 +42,26 @@ import rice_husk13 from "@/public/products/Rice Husk/rice-husk13.jpeg"
 
 const productsData = [
 // --- Bamboo Essentials (Corrected based on Image Visuals) ---
-  { id: 1, name: "Bamboo Bottle", img: bamboo_essentials1, category: "Bamboo Essentials" },
+  { id: 1, name: "Bamboo Bottle 450ml", img: bamboo_essentials1, category: "Bamboo Essentials" },
   { id: 2, name: "Pocket Comb", img: bamboo_essentials2, category: "Bamboo Essentials" },
-  { id: 3, name: "Beard Neem Comb", img: bamboo_essentials3, category: "Bamboo Essentials" },
-  { id: 4, name: "Bamboo Toothbrush & Tongue Cleaner", img: bamboo_essentials4, category: "Bamboo Essentials" },
+  { id: 3, name: "Lice Comb", img: bamboo_essentials3, category: "Bamboo Essentials" },
+  { id: 4, name: "Bamboo Toothbrush", img: bamboo_essentials4, category: "Bamboo Essentials" },
   { id: 5, name: "Bamboo Razor D", img: bamboo_essentials5, category: "Bamboo Essentials" },
-  { id: 6, name: "Lice Neem Comb", img: bamboo_essentials6, category: "Bamboo Essentials" },
+  { id: 6, name: "Beard Comb", img: bamboo_essentials6, category: "Bamboo Essentials" },
   { id: 7, name: "Bamboo Cutlery Kit", img: bamboo_essentials7, category: "Bamboo Essentials" },
-  { id: 8, name: "Bamboo Sipper", img: bamboo_essentials8, category: "Bamboo Essentials" },
+  { id: 8, name: "Rice Husk Bottle", img: bamboo_essentials8, category: "Bamboo Essentials" },
   { id: 9, name: "Bamboo Non-Terry Towel", img: bamboo_essentials9, category: "Bamboo Essentials" },
 
   // --- Cane Baskets (Matching Excel S.No) ---
   { id: 10, name: "Boat Bag", img: cane_baskets1, category: "Cane Baskets" },
-  { id: 11, name: "Jaali Bag", img: cane_baskets2, category: "Cane Baskets" },
+  { id: 11, name: "Storage Lid Box", img: cane_baskets2, category: "Cane Baskets" },
   { id: 12, name: "Beach Bag", img: cane_baskets3, category: "Cane Baskets" },
-  { id: 13, name: "U Handle Clur", img: cane_baskets4, category: "Cane Baskets" },
+  { id: 13, name: "Shelf Basket", img: cane_baskets4, category: "Cane Baskets" },
   { id: 14, name: "Fruit Basket", img: cane_baskets5, category: "Cane Baskets" },
   { id: 15, name: "Hamper Bag", img: cane_baskets6, category: "Cane Baskets" },
-  { id: 16, name: "Circle Hamper Bag", img: cane_baskets7, category: "Cane Baskets" },
-  { id: 17, name: "Jaali Frut Rec Basket", img: cane_baskets8, category: "Cane Baskets" },
-  { id: 18, name: "Colorfull Lidbox", img: cane_baskets9, category: "Cane Baskets" },
+  { id: 16, name: "Tiffin Bag", img: cane_baskets7, category: "Cane Baskets" },
+  { id: 17, name: "Designer Jaali Bag", img: cane_baskets8, category: "Cane Baskets" },
+  { id: 18, name: "Designer Boat Bag", img: cane_baskets9, category: "Cane Baskets" },
 
   // --- Rice Husk (Matching Excel S.No) ---
 // --- Rice Husk (Corrected based on Image Visuals & Excel Data) ---
@@ -72,11 +72,11 @@ const productsData = [
   { id: 23, name: "Classic Mug", img: rice_husk5, category: "Rice Husk" },
   { id: 24, name: "Canister (Tall)", img: rice_husk6, category: "Rice Husk" },
   { id: 25, name: "Snack plate", img: rice_husk7, category: "Rice Husk" },
-  { id: 26, name: "Cutting Chai Cup", img: rice_husk8, category: "Rice Husk" },
+  { id: 26, name: "Chai Cup", img: rice_husk8, category: "Rice Husk" },
   { id: 27, name: "Dinner Set", img: rice_husk9, category: "Rice Husk" },
   // { id: 28, name: "Storage Basket", img: rice_husk10, category: "Rice Husk" },
-  { id: 29, name: "Majestic Mug", img: rice_husk11, category: "Rice Husk" },
-  { id: 30, name: "Retro Cup", img: rice_husk12, category: "Rice Husk" },
+  { id: 29, name: "Retro Cup", img: rice_husk11, category: "Rice Husk" },
+  { id: 30, name: "Fusion Cup", img: rice_husk12, category: "Rice Husk" },
   { id: 31, name: "Deco planter", img: rice_husk13, category: "Rice Husk" },
 ];
 
@@ -158,7 +158,7 @@ export default function Products() {
                 src={product.img} 
                 alt={product.name} 
                 fill 
-                className=" group-hover:scale-110 transition-transform duration-300 object-cover" 
+                className=" group-hover:scale-110 transition-transform duration-300 " 
               />
             </div>
 

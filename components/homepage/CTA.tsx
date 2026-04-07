@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const CTA = () => {
@@ -24,12 +25,12 @@ const CTA = () => {
 
         {/* Input/Button Group */}
      <div className="flex justify-center items-center gap-4">
-       <button className="bg-white px-8 py-3 transition-all">
+       <Link href={"/contact"} className="bg-white px-8 py-3 transition-all">
             Shop Now
-          </button>
-           <button className="bg-[#a3a393] hover:bg-[#7cb140] text-white px-8 py-3 transition-all">
+          </Link>
+           <Link href={"/about"} className="bg-[#a3a393] hover:bg-[#7cb140] text-white px-8 py-3 transition-all">
             About Us
-          </button>
+          </Link>
      </div>
       </div>
     </section>

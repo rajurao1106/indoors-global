@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { LayoutGrid, List } from 'lucide-react';
 import Link from 'next/link';
 
-// Imports (Inhe waise hi rehne diya hai jaisa aapne setup kiya tha)
+// --- BAMBOO ESSENTIALS IMPORTS ---
 import bamboo_essentials1 from "@/public/products/Bamboo Essentials/bamboo-essentials1.jpeg"
 import bamboo_essentials2 from "@/public/products/Bamboo Essentials/bamboo-essentials2.jpeg"
 import bamboo_essentials3 from "@/public/products/Bamboo Essentials/bamboo-essentials3.jpeg"
@@ -16,6 +16,7 @@ import bamboo_essentials7 from "@/public/products/Bamboo Essentials/bamboo-essen
 import bamboo_essentials8 from "@/public/products/Bamboo Essentials/bamboo-essentials8.jpeg"
 import bamboo_essentials9 from "@/public/products/Bamboo Essentials/bamboo-essentials9.jpeg"
 
+// --- CANE BASKETS IMPORTS ---
 import cane_baskets1 from "@/public/products/Cane Baskets/cane-baskets1.jpeg"
 import cane_baskets2 from "@/public/products/Cane Baskets/cane-baskets2.jpeg"
 import cane_baskets3 from "@/public/products/Cane Baskets/cane-baskets3.jpeg"
@@ -26,6 +27,7 @@ import cane_baskets7 from "@/public/products/Cane Baskets/cane-baskets7.jpeg"
 import cane_baskets8 from "@/public/products/Cane Baskets/cane-baskets8.jpeg"
 import cane_baskets9 from "@/public/products/Cane Baskets/cane-baskets9.jpeg"
 
+// --- RICE HUSK IMPORTS ---
 import rice_husk1 from "@/public/products/Rice Husk/rice-husk1.jpeg"
 import rice_husk2 from "@/public/products/Rice Husk/rice-husk2.jpeg"
 import rice_husk3 from "@/public/products/Rice Husk/rice-husk3.jpeg"
@@ -35,13 +37,33 @@ import rice_husk6 from "@/public/products/Rice Husk/rice-husk6.jpeg"
 import rice_husk7 from "@/public/products/Rice Husk/rice-husk7.jpeg"
 import rice_husk8 from "@/public/products/Rice Husk/rice-husk8.jpeg"
 import rice_husk9 from "@/public/products/Rice Husk/rice-husk9.jpeg"
-// import rice_husk10 from "@/public/products/Rice Husk/rice-husk10.jpeg"
 import rice_husk11 from "@/public/products/Rice Husk/rice-husk11.jpeg"
 import rice_husk12 from "@/public/products/Rice Husk/rice-husk12.jpeg"
 import rice_husk13 from "@/public/products/Rice Husk/rice-husk13.jpeg"
 
+// --- NEW ECO KITS IMPORTS (Corrected Duplicates) ---
+// --- ECO KITS IMPORTS (Updated with names from Image) ---
+import kits1 from "@/public/Indoor Global Kit/Toiletry kit1.jpg"
+import kits2 from "@/public/Indoor Global Kit/Toiletry kit3.jpg"
+import kits3 from "@/public/Indoor Global Kit/Toiletry kit4.jpg"
+import kits4 from "@/public/Indoor Global Kit/Toiletry kit2.jpg"
+import kits5 from "@/public/Indoor Global Kit/Hand Towel Set1.jpg"
+import kits6 from "@/public/Indoor Global Kit/Plantable Stationery kit2.jpg"
+import kits7 from "@/public/Indoor Global Kit/Corporate kit1.jpg"
+import kits8 from "@/public/Indoor Global Kit/Plantable Stationery kit1.jpg"
+import kits9 from "@/public/Indoor Global Kit/Plantable Stationery kit3.jpg"
+import kits10 from "@/public/Indoor Global Kit/Children's kit1.jpg"
+import kits11 from "@/public/Indoor Global Kit/Ricehusk Dinner Set2.jpg"
+import kits12 from "@/public/Indoor Global Kit/Ricehusk Dinner Set1.jpg"
+import kits13 from "@/public/Indoor Global Kit/Children's kit3.jpg"
+import kits14 from "@/public/Indoor Global Kit/Children's kit2.jpg"
+import kits15 from "@/public/Indoor Global Kit/Hand Towel Set2.jpg"
+import kits16 from "@/public/Indoor Global Kit/Hand Towel Set3.jpg"
+import kits17 from "@/public/Indoor Global Kit/Hand Towel Set4.jpg"
+import kits18 from "@/public/Indoor Global Kit/Hand Towel Set5.jpg"
+
 const productsData = [
-// --- Bamboo Essentials (Corrected based on Image Visuals) ---
+  // --- Bamboo Essentials ---
   { id: 1, name: "Bamboo Bottle 450ml", img: bamboo_essentials1, category: "Bamboo Essentials" },
   { id: 2, name: "Pocket Comb", img: bamboo_essentials2, category: "Bamboo Essentials" },
   { id: 3, name: "Lice Comb", img: bamboo_essentials3, category: "Bamboo Essentials" },
@@ -52,7 +74,7 @@ const productsData = [
   { id: 8, name: "Rice Husk Bottle", img: bamboo_essentials8, category: "Bamboo Essentials" },
   { id: 9, name: "Bamboo Non-Terry Towel", img: bamboo_essentials9, category: "Bamboo Essentials" },
 
-  // --- Cane Baskets (Matching Excel S.No) ---
+  // --- Cane Baskets ---
   { id: 10, name: "Boat Bag", img: cane_baskets1, category: "Cane Baskets" },
   { id: 11, name: "Storage Lid Box", img: cane_baskets2, category: "Cane Baskets" },
   { id: 12, name: "Beach Bag", img: cane_baskets3, category: "Cane Baskets" },
@@ -63,8 +85,7 @@ const productsData = [
   { id: 17, name: "Designer Jaali Bag", img: cane_baskets8, category: "Cane Baskets" },
   { id: 18, name: "Designer Boat Bag", img: cane_baskets9, category: "Cane Baskets" },
 
-  // --- Rice Husk (Matching Excel S.No) ---
-// --- Rice Husk (Corrected based on Image Visuals & Excel Data) ---
+  // --- Rice Husk ---
   { id: 19, name: "Riged guard Loofah", img: rice_husk1, category: "Rice Husk" },
   { id: 20, name: "Bamboo Ear Swabs", img: rice_husk2, category: "Rice Husk" },
   { id: 21, name: "Canister", img: rice_husk3, category: "Rice Husk" },
@@ -74,17 +95,36 @@ const productsData = [
   { id: 25, name: "Snack plate", img: rice_husk7, category: "Rice Husk" },
   { id: 26, name: "Chai Cup", img: rice_husk8, category: "Rice Husk" },
   { id: 27, name: "Dinner Set", img: rice_husk9, category: "Rice Husk" },
-  // { id: 28, name: "Storage Basket", img: rice_husk10, category: "Rice Husk" },
   { id: 29, name: "Retro Cup", img: rice_husk11, category: "Rice Husk" },
   { id: 30, name: "Fusion Cup", img: rice_husk12, category: "Rice Husk" },
   { id: 31, name: "Deco planter", img: rice_husk13, category: "Rice Husk" },
+
+  // --- NEW ECO KITS ---
+  { id: 32, name: "Toiletry kit1", img: kits1, category: "Eco Kits" },
+  { id: 33, name: "Toiletry kit3", img: kits2, category: "Eco Kits" },
+  { id: 34, name: "Toiletry kit4", img: kits3, category: "Eco Kits" },
+  { id: 35, name: "Toiletry kit2", img: kits4, category: "Eco Kits" },
+  { id: 36, name: "Hand Towel Set1", img: kits5, category: "Eco Kits" },
+  { id: 37, name: "Plantable Stationery kit2", img: kits6, category: "Eco Kits" },
+  { id: 38, name: "Corporate kit1", img: kits7, category: "Eco Kits" },
+  { id: 39, name: "Plantable Stationery kit1", img: kits8, category: "Eco Kits" },
+  { id: 40, name: "Plantable Stationery kit3", img: kits9, category: "Eco Kits" },
+  { id: 41, name: "Children's kit1", img: kits10, category: "Eco Kits" },
+  { id: 42, name: "Ricehusk Dinner Set2", img: kits11, category: "Eco Kits" },
+  { id: 43, name: "Ricehusk Dinner Set1", img: kits12, category: "Eco Kits" },
+  { id: 44, name: "Children's kit3", img: kits13, category: "Eco Kits" },
+  { id: 45, name: "Children's kit2", img: kits14, category: "Eco Kits" },
+  { id: 46, name: "Hand Towel Set2", img: kits15, category: "Eco Kits" },
+  { id: 47, name: "Hand Towel Set3", img: kits16, category: "Eco Kits" },
+  { id: 48, name: "Hand Towel Set4", img: kits17, category: "Eco Kits" },
+  { id: 49, name: "Hand Towel Set5", img: kits18, category: "Eco Kits" },
 ];
 
-const categories = ["All", "Rice Husk", "Bamboo Essentials", "Cane Baskets"];
+const categories = ["All", "Eco Kits", "Rice Husk", "Bamboo Essentials", "Cane Baskets"];
 
 export default function Products() {
   const [activeCategory, setActiveCategory] = useState("All");
-  const [viewMode, setViewMode] = useState('grid');
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
   const filteredProducts = activeCategory === "All" 
     ? productsData 
@@ -93,14 +133,16 @@ export default function Products() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-10 font-sans text-[#444]">
       
+      {/* Description Section */}
       <div className="mb-10 text-gray-600 leading-relaxed text-[15px] max-w-5xl">
         <p>
           Discover our sustainable collection crafted from natural materials. 
-          From biodegradable Rice Husk kitchenware to handcrafted Cane Baskets and 
-          eco-friendly Bamboo Essentials, we bring you products that are kind to the planet.
+          From curated <strong>Eco-Friendly Kits</strong> and biodegradable Rice Husk kitchenware to 
+          handcrafted Cane Baskets and Bamboo Essentials, we bring you products that are kind to the planet.
         </p>
       </div>
 
+      {/* Toolbar Section */}
       <div className="flex flex-wrap items-center justify-between border-t border-b border-gray-100 py-4 mb-8">
         <div className="flex items-center gap-2">
           <button 
@@ -137,6 +179,7 @@ export default function Products() {
         </div>
       </div>
 
+      {/* Product Display Section */}
       <div className={
         viewMode === 'grid' 
           ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" 
@@ -158,7 +201,7 @@ export default function Products() {
                 src={product.img} 
                 alt={product.name} 
                 fill 
-                className=" group-hover:scale-110 transition-transform duration-300 " 
+                className="object-cover group-hover:scale-110 transition-transform duration-300" 
               />
             </div>
 
@@ -189,6 +232,7 @@ export default function Products() {
         })}
       </div>
 
+      {/* Empty State */}
       {filteredProducts.length === 0 && (
         <div className="text-center py-20 text-gray-400">
           No products found in this category.

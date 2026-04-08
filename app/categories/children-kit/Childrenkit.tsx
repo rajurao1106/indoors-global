@@ -1,65 +1,33 @@
 import React from 'react';
 
-// Image Imports
-import bamboo_essentials1 from "@/public/products/Bamboo Essentials/bamboo-essentials1.jpeg"
-import bamboo_essentials4 from "@/public/products/Bamboo Essentials/bamboo-essentials4.jpeg"
-import bamboo_essentials7 from "@/public/products/Bamboo Essentials/bamboo-essentials7.jpeg"
-import cane_baskets2 from "@/public/products/Cane Baskets/cane-baskets2.jpeg"
-import cane_baskets5 from "@/public/products/Cane Baskets/cane-baskets5.jpeg"
-import rice_husk4 from "@/public/products/Rice Husk/rice-husk4.jpeg"
-import rice_husk7 from "@/public/products/Rice Husk/rice-husk7.jpeg"
-import rice_husk8 from "@/public/products/Rice Husk/rice-husk8.jpeg"
+// --- IMAGE IMPORTS ---
+// Individual items for Children Kit
 
-// CHILDREN KIT products based on word file
+// Visual Kit imports from "Indoor Global Kit" list
+import kits10 from "@/public/Indoor Global Kit/Children's kit1.jpg"
+import kits13 from "@/public/Indoor Global Kit/Children's kit3.jpg"
+import kits14 from "@/public/Indoor Global Kit/Children's kit2.jpg"
+
+// CHILDREN KIT products based on visuals and word file
 const products = [
   {
     id: 1,
-    name: 'Bamboo Bottle',
-    description: 'Eco-friendly and durable bamboo bottle for kids.',
-    image: bamboo_essentials1,
+    name: "Children's kit 1",
+    description: 'Eco-friendly mealtime set with a bamboo cup and handcrafted cane basket.',
+    image: kits10,
   },
   {
     id: 2,
-    name: 'Snacks Plate Big',
-    description: 'Safe and sustainable rice husk plate for snacks.',
-    image: rice_husk7,
+    name: "Children's kit 2",
+    description: 'Sustainable dining kit with a pastel bowl, spoon, and bamboo bottle in a jute bag.',
+    image: kits14,
   },
   {
     id: 3,
-    name: 'Shop Bowl',
-    description: 'Natural rice husk bowl perfect for children.',
-    image: rice_husk4,
+    name: "Children's kit 3",
+    description: 'Premium kids adventure kit featuring a durable plate, bottle, and carrying bag.',
+    image: kits13,
   },
-  {
-    id: 4,
-    name: 'Chai Cup',
-    description: 'Small eco-friendly cup for milk or drinks.',
-    image: rice_husk8,
-  },
-  {
-    id: 5,
-    name: 'White Jute Bag',
-    description: 'Lightweight white jute bag for carrying toys or books.',
-    image: cane_baskets2,
-  },
-  {
-    id: 6,
-    name: 'Cutlery Kit',
-    description: 'Bamboo cutlery set designed for little hands.',
-    image: bamboo_essentials7,
-  },
-  {
-    id: 7,
-    name: 'Thought brush small',
-    description: 'Small bamboo toothbrush for kids oral care.',
-    image: bamboo_essentials4,
-  },
-  {
-    id: 8,
-    name: 'Fruit Basket',
-    description: 'Handcrafted cane basket for fresh fruits.',
-    image: cane_baskets5,
-  }
 ];
 
 export default function Childrenkit() {
@@ -76,9 +44,9 @@ export default function Childrenkit() {
         {products.map((product) => (
           <div key={product.id} className="group cursor-pointer">
             {/* Image Container */}
-            <div className="aspect-[4/5] overflow-hidden rounded-lg bg-gray-100 mb-4">
+            <div className="aspect-[4/5] overflow-hidden rounded-lg bg-gray-100 mb-4 border border-gray-100">
               <img
-                src={product.image.src }
+                src={product.image.src}
                 alt={product.name}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -91,7 +59,7 @@ export default function Childrenkit() {
             <p className="text-sm text-gray-500 mt-1">
               {product.description}
             </p>
-            <button className="text-xs font-semibold text-gray-400 mt-2 uppercase tracking-wider group-hover:text-black transition-colors">
+            <button className="text-xs font-semibold text-[#a3a393] mt-2 uppercase tracking-wider group-hover:text-black transition-colors">
               View details
             </button>
           </div>

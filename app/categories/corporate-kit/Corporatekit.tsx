@@ -1,71 +1,19 @@
 import React from 'react';
 
-// Image Imports
-import bamboo_essentials4 from "@/public/products/Bamboo Essentials/bamboo-essentials4.jpeg"
-import bamboo_essentials9 from "@/public/products/Bamboo Essentials/bamboo-essentials9.jpeg"
-import bamboo_essentials7 from "@/public/products/Bamboo Essentials/bamboo-essentials7.jpeg"
-import rice_husk3 from "@/public/products/Rice Husk/rice-husk3.jpeg"
-import rice_husk7 from "@/public/products/Rice Husk/rice-husk7.jpeg"
-import rice_husk8 from "@/public/products/Rice Husk/rice-husk8.jpeg"
-// import rice_husk10 from "@/public/products/Rice Husk/rice-husk10.jpeg"
-import rice_husk12 from "@/public/products/Rice Husk/rice-husk12.jpeg"
+// --- IMAGE IMPORTS ---
+// Individual items for Corporate Kit
 
-// CORPORATE KIT products based on word file
+// Visual Kit import from "Indoor Global Kit" list
+import kits7 from "@/public/Indoor Global Kit/Corporate kit1.jpg"
+
+// CORPORATE KIT products based on visuals and word file
 const products = [
   {
     id: 1,
-    name: 'Retro Cup',
-    description: 'Classic rice husk retro cup for a sustainable office desk.',
-    image: rice_husk12,
+    name: 'Corporate kit 1',
+    description: 'Complete premium gifting hamper including a notebook, rice husk mug, and sustainable accessories.',
+    image: kits7,
   },
-  {
-    id: 2,
-    name: 'Face Towel / Bamboo Hand Towel',
-    description: 'Soft and eco-friendly bamboo fiber towel.',
-    image: bamboo_essentials9,
-  },
-  {
-    id: 3,
-    name: 'Seed Diary',
-    description: 'Eco-conscious diary with plantable seed paper.',
-    image: rice_husk3, // Based on stationary/canister placeholder
-  },
-  {
-    id: 4,
-    name: 'Seed Pen & Pencil Set',
-    description: 'Sustainable writing tools that can be planted after use.',
-    image: bamboo_essentials4,
-  },
-//   {
-//     id: 5,
-//     name: 'Big Box / Hamper Box',
-//     description: 'Sustainable storage box for corporate gifting.',
-//     image: rice_husk10,
-//   },
-  {
-    id: 6,
-    name: 'Chai Cup Set',
-    description: 'Pair of elegant rice husk cups for tea/coffee.',
-    image: rice_husk8,
-  },
-  {
-    id: 7,
-    name: 'Coaster Set',
-    description: 'Eco-friendly rice husk coasters for office tables.',
-    image: rice_husk7, // Based on snack plate/coaster placeholder
-  },
-  {
-    id: 8,
-    name: 'Snack Plate',
-    description: 'Durable and organic rice husk plate for office snacks.',
-    image: rice_husk7,
-  },
-  {
-    id: 9,
-    name: 'Ricehusk Spoon',
-    description: 'Eco-friendly spoon made from natural rice husk.',
-    image: bamboo_essentials7,
-  }
 ];
 
 export default function Corporatekit() {
@@ -82,9 +30,9 @@ export default function Corporatekit() {
         {products.map((product) => (
           <div key={product.id} className="group cursor-pointer">
             {/* Image Container */}
-            <div className="aspect-[4/5] overflow-hidden rounded-lg bg-gray-100 mb-4">
+            <div className="aspect-[4/5] overflow-hidden rounded-lg bg-gray-100 mb-4 border border-gray-100">
               <img
-                src={product.image.src }
+                src={product.image.src}
                 alt={product.name}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -97,7 +45,7 @@ export default function Corporatekit() {
             <p className="text-sm text-gray-500 mt-1">
               {product.description}
             </p>
-            <button className="text-xs font-semibold text-gray-400 mt-2 uppercase tracking-wider group-hover:text-black transition-colors">
+            <button className="text-xs font-semibold text-[#a3a393] mt-2 uppercase tracking-wider group-hover:text-black transition-colors">
               View details
             </button>
           </div>

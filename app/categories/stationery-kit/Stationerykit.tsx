@@ -1,29 +1,30 @@
 import React from 'react';
 
-// Image Imports
+// --- IMAGE IMPORTS ---
 import bamboo_essentials4 from "@/public/products/Bamboo Essentials/bamboo-essentials4.jpeg"
 import rice_husk3 from "@/public/products/Rice Husk/rice-husk3.jpeg"
 
-// STATIONERY KIT products based on word file
+// Kit specific imports from your provided list
+import kits6 from "@/public/Indoor Global Kit/Plantable Stationery kit2.jpg"
+import kits8 from "@/public/Indoor Global Kit/Plantable Stationery kit1.jpg"
+import kits9 from "@/public/Indoor Global Kit/Plantable Stationery kit3.jpg"
+
+// STATIONERY KIT products combined
 const products = [
   {
     id: 1,
-    name: 'Seed Diary',
-    description: 'Eco-friendly diary with plantable seed paper cover.',
-    image: rice_husk3,
+    name: 'Plantable Stationery kit 1',
+    description: 'Complete eco-friendly writing set featuring an open notebook and plantable pens.',
+    image: kits8,
   },
   {
     id: 2,
-    name: 'Seed Pen',
-    description: 'Sustainable writing pen containing seeds to plant after use.',
-    image: bamboo_essentials4,
+    name: 'Plantable Stationery kit 2',
+    description: 'Premium grow-it-yourself kit with a coffee-husk mug and seed diary.',
+    image: kits6,
   },
-  {
-    id: 3,
-    name: 'Seed Pencil',
-    description: 'Biodegradable pencil that grows into a plant.',
-    image: bamboo_essentials4,
-  }
+
+ 
 ];
 
 export default function Stationerykit() {
@@ -40,9 +41,9 @@ export default function Stationerykit() {
         {products.map((product) => (
           <div key={product.id} className="group cursor-pointer">
             {/* Image Container */}
-            <div className="aspect-[4/5] overflow-hidden rounded-lg bg-gray-100 mb-4">
+            <div className="aspect-[4/5] overflow-hidden rounded-lg bg-gray-100 mb-4 border border-gray-100">
               <img
-                src={product.image.src }
+                src={product.image.src}
                 alt={product.name}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -55,7 +56,7 @@ export default function Stationerykit() {
             <p className="text-sm text-gray-500 mt-1">
               {product.description}
             </p>
-            <button className="text-xs font-semibold text-gray-400 mt-2 uppercase tracking-wider group-hover:text-black transition-colors">
+            <button className="text-xs font-semibold text-[#a3a393] mt-2 uppercase tracking-wider group-hover:text-black transition-colors">
               View details
             </button>
           </div>

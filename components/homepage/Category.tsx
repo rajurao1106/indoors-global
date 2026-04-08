@@ -4,51 +4,36 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-// Images imports
-import toiletry_kit from "@/public/homepage/toiletry-kit1.jpeg";
-import childrens_kit from "@/public/homepage/childrens-kit1.jpeg";
-import hand_towel_set from "@/public/homepage/hand-towel-set.jpeg";
-import ricehusk_dinner_set from "@/public/homepage/ricehusk-dinner-set.jpeg";
-import corporate_kit from "@/public/homepage/corporate-kit.jpeg";
-import plantable_stationary_kit from "@/public/homepage/plantable-stationary-kit.jpeg";
+
+import bamboo_essentials1 from "@/public/products/Bamboo Essentials/bamboo-essentials1.jpeg"
+import cane_baskets1 from "@/public/products/Cane Baskets/cane-baskets1.jpeg"
+import rice_husk1 from "@/public/products/Rice Husk/rice-husk1.jpeg"
+import kits1 from "@/public/Indoor Global Kit/Toiletry kit1.jpg"
 
 const categories = [
   { 
-    name: "Toiletry kit", 
-    slug: "toiletry-kit",
-    image: toiletry_kit, 
+    name: "Bamboo Essentials", 
+    slug: "products",
+    image: bamboo_essentials1, 
     description: "Eco-friendly essentials for a sustainable morning routine." 
   },
   { 
-    name: "Children's kit", 
-    slug: "children-kit",
-    image: childrens_kit, 
+    name: "Cane Baskets", 
+    slug: "products",
+    image: cane_baskets1, 
     description: "Gentle and safe bamboo products for your little ones." 
   },
   { 
-    name: "Corporate Kit", 
-    slug: "corporate-kit",
-    image: corporate_kit, 
+    name: "Rice Husk", 
+    slug: "products",
+    image: rice_husk1, 
     description: "Professional and sustainable gifting solutions." 
   },
    { 
-    name: "Ricehusk Dinner Set", 
-    slug: "dinner-set",
-    image: ricehusk_dinner_set, 
+    name: "Eco-Friendly Kits", 
+    slug: "products",
+    image: kits1, 
     description: "Elegant, durable, and plastic-free dining experience." 
-  },
-  { 
-    name: "Plantable Stationery kit", 
-    slug: "stationery-kit",
-    image: plantable_stationary_kit, 
-    description: "Eco-friendly stationery that grows into plants after use." 
-  },
-  
-  { 
-    name: "Hand Towel Set", 
-    slug: "towel-set",
-    image: hand_towel_set, 
-    description: "Ultra-soft, antibacterial bamboo fiber towels." 
   },
 ];
 
@@ -76,22 +61,14 @@ const Category = () => {
           Shop By Category
         </h2>
 
-        <div className="flex gap-3">
-          <button
-            onClick={() => scroll("left")}
-            aria-label="Scroll Left"
-            className="p-2 rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-gray-50 transition-all shadow-sm active:scale-90"
+        {/* <div className="flex gap-3">
+             <Link
+            href={"/contact"}
+            className="hidden sm:block bg-[#a3a393] hover:bg-[#7cb140] text-white px-6 md:px-8 py-3 md:py-4 text-[10px] md:text-xs uppercase tracking-widest transition-all duration-300"
           >
-            <ChevronLeft size={22} />
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            aria-label="Scroll Right"
-            className="p-2 rounded-full bg-white border border-gray-200 text-gray-500 hover:bg-gray-50 transition-all shadow-sm active:scale-90"
-          >
-            <ChevronRight size={22} />
-          </button>
-        </div>
+            Shop Patterns
+          </Link>
+        </div> */}
       </div>
 
       {/* Main Slider Container */}
@@ -106,7 +83,7 @@ const Category = () => {
         >
           {categories.map((category, index) => (
             <Link 
-              href={`/categories/${category.slug}`}
+              href={`/${category.slug}`}
               key={index}
               className="flex-shrink-0 w-[260px] group cursor-pointer snap-start"
             >

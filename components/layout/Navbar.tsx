@@ -12,7 +12,7 @@ const Navbar = () => {
 
   // Aapki specific list ke hisaab se categories
   const categories = [
-    { name: "SELF - CARE KIT", href: "/categories/self-care-kit" },
+    // { name: "SELF - CARE KIT", href: "/categories/self-care-kit" },
     { name: "TOILETRY KIT", href: "/categories/toiletry-kit" },
     { name: "CHILDREN KIT", href: "/categories/children-kit" },
     { name: "HAND TOWEL SET", href: "/categories/towel-kit" },

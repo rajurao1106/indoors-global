@@ -100,27 +100,27 @@ const productsData = [
   { id: 31, name: "Deco planter", img: rice_husk13, category: "Rice Husk" },
 
   // --- NEW ECO KITS ---
-  { id: 32, name: "Toiletry kit1", img: kits1, category: "Eco Kits" },
-  { id: 33, name: "Toiletry kit3", img: kits2, category: "Eco Kits" },
-  { id: 34, name: "Toiletry kit4", img: kits3, category: "Eco Kits" },
-  { id: 35, name: "Toiletry kit2", img: kits4, category: "Eco Kits" },
-  { id: 36, name: "Hand Towel Set1", img: kits5, category: "Eco Kits" },
-  { id: 37, name: "Plantable Stationery kit2", img: kits6, category: "Eco Kits" },
-  { id: 38, name: "Corporate kit1", img: kits7, category: "Eco Kits" },
-  { id: 39, name: "Plantable Stationery kit1", img: kits8, category: "Eco Kits" },
-  { id: 40, name: "Plantable Stationery kit3", img: kits9, category: "Eco Kits" },
-  { id: 41, name: "Children's kit1", img: kits10, category: "Eco Kits" },
-  { id: 42, name: "Ricehusk Dinner Set2", img: kits11, category: "Eco Kits" },
-  { id: 43, name: "Ricehusk Dinner Set1", img: kits12, category: "Eco Kits" },
-  { id: 44, name: "Children's kit3", img: kits13, category: "Eco Kits" },
-  { id: 45, name: "Children's kit2", img: kits14, category: "Eco Kits" },
-  { id: 46, name: "Hand Towel Set2", img: kits15, category: "Eco Kits" },
-  { id: 47, name: "Hand Towel Set3", img: kits16, category: "Eco Kits" },
-  { id: 48, name: "Hand Towel Set4", img: kits17, category: "Eco Kits" },
-  { id: 49, name: "Hand Towel Set5", img: kits18, category: "Eco Kits" },
+  { id: 32, name: "Toiletry kit1", img: kits1, category: "Eco-Friendly Kits" },
+  { id: 33, name: "Toiletry kit3", img: kits2, category: "Eco-Friendly Kits" },
+  { id: 34, name: "Toiletry kit4", img: kits3, category: "Eco-Friendly Kits" },
+  { id: 35, name: "Toiletry kit2", img: kits4, category: "Eco-Friendly Kits" },
+  { id: 36, name: "Hand Towel Set1", img: kits5, category: "Eco-Friendly Kits" },
+  { id: 37, name: "Plantable Stationery kit2", img: kits6, category: "Eco-Friendly Kits" },
+  { id: 38, name: "Corporate kit1", img: kits7, category: "Eco-Friendly Kits" },
+  { id: 39, name: "Plantable Stationery kit1", img: kits8, category: "Eco-Friendly Kits" },
+  { id: 40, name: "Plantable Stationery kit3", img: kits9, category: "Eco-Friendly Kits" },
+  { id: 41, name: "Children's kit1", img: kits10, category: "Eco-Friendly Kits" },
+  { id: 42, name: "Ricehusk Dinner Set2", img: kits11, category: "Eco-Friendly Kits" },
+  { id: 43, name: "Ricehusk Dinner Set1", img: kits12, category: "Eco-Friendly Kits" },
+  { id: 44, name: "Children's kit3", img: kits13, category: "Eco-Friendly Kits" },
+  { id: 45, name: "Children's kit2", img: kits14, category: "Eco-Friendly Kits" },
+  { id: 46, name: "Hand Towel Set2", img: kits15, category: "Eco-Friendly Kits" },
+  { id: 47, name: "Hand Towel Set3", img: kits16, category: "Eco-Friendly Kits" },
+  { id: 48, name: "Hand Towel Set4", img: kits17, category: "Eco-Friendly Kits" },
+  { id: 49, name: "Hand Towel Set5", img: kits18, category: "Eco-Friendly Kits" },
 ];
 
-const categories = ["All", "Eco Kits", "Rice Husk", "Bamboo Essentials", "Cane Baskets"];
+const categories = ["All", "Eco-Friendly Kits", "Rice Husk", "Bamboo Essentials", "Cane Baskets"];
 
 export default function Products() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -201,7 +201,7 @@ export default function Products() {
                 src={product.img} 
                 alt={product.name} 
                 fill 
-                className="object-cover group-hover:scale-110 transition-transform duration-300" 
+                className=" group-hover:scale-110 transition-transform duration-300" 
               />
             </div>
 

@@ -12,7 +12,7 @@ const productsData = [
   {
     id: 38,
     name: "Corporate kit 1",
-    description: "Complete premium gifting hamper including a notebook, rice husk mug, and sustainable accessories.",
+    description: "Make your desk a statement of your values. This kit bridges the gap between work and wellness, featuring a plantable notebook, a reusable rice-husk coffee tumbler, a seed pen, and a soft crimson hand towel. It’s the ultimate Welcome or Thank You gift for the modern professional.",
     img: kits7,
     category: "Corporate Kit"
   },

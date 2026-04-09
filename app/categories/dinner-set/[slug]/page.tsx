@@ -13,14 +13,14 @@ const productsData = [
   {
     id: 43,
     name: "Ricehusk Dinner Set 1",
-    description: "Complete family dining set made from sustainable rice husk. Includes plates, bowls, and mugs in natural earth tones.",
+    description: "Upgrade your kitchen with the beauty of the harvest. This full dining set is made from recycled rice husks, giving every piece a natural, speckled finish. With multiple plate sizes, bowls, and tumblers, it’s a lightweight, non-toxic, and sustainable alternative to plastic or heavy ceramic.",
     img: kits12,
     category: "Dinner Set"
   },
   {
     id: 42,
     name: "Ricehusk Dinner Set 2",
-    description: "Premium pastel-themed dinner set featuring square plates and matching cutlery for a modern eco-friendly table.",
+    description: "Bring the calming colors of the sea to your dining table. Made from upcycled rice husks, this set features a beautiful seafoam green and speckled beige palette. With indented plates, deep tumblers, and ergonomic spoons, it’s lightweight, shatter-proof, and 100% non-toxic. Perfect for outdoor picnics or eco-conscious dinner parties.",
     img: kits11,
     category: "Dinner Set"
   },

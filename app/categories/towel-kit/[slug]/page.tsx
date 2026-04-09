@@ -13,11 +13,41 @@ import kits17 from "@/public/Indoor Global Kit/Hand Towel Set4.jpg"
 import kits18 from "@/public/Indoor Global Kit/Hand Towel Set5.jpg"
 
 const productsData = [
-  { id: 36, name: "Hand Towel Set 1", description: "Premium towel set with a decorative star detail in a jute basket.", img: kits5, category: "Towel Kit" },
-  { id: 46, name: "Hand Towel Set 2", description: "Deep blue ultra-soft absorbent towel for daily use.", img: kits15, category: "Towel Kit" },
-  { id: 47, name: "Hand Towel Set 3", description: "Bright red soft-touch towel made from organic fibers.", img: kits16, category: "Towel Kit" },
-  { id: 48, name: "Hand Towel Set 4", description: "Double set of plush red hand towels.", img: kits17, category: "Towel Kit" },
-  { id: 49, name: "Hand Towel Set 5", description: "Light teal fresh bamboo-blend hand towel.", img: kits18, category: "Towel Kit" }
+  { 
+    id: 36, 
+    name: "Hand Towel Set 1", 
+    description: "The Artisanal Collection. Two plush berry-red towels nested in a hand-coiled jute basket, blooming with a handcrafted burlap flower.", 
+    img: kits5, 
+    category: "Towel Kit" 
+  },
+  { 
+    id: 46, 
+    name: "Hand Towel Set 2", 
+    description: "Oceanic comfort. A deep royal blue towel engineered for high-absorbency and a sophisticated, spa-like feel in your own home.", 
+    img: kits15, 
+    category: "Towel Kit" 
+  },
+  { 
+    id: 47, 
+    name: "Hand Towel Set 3", 
+    description: "The Crimson Duo. A rolled set of vibrant red towels made from eco-conscious fibers that stay cloud-soft wash after wash.", 
+    img: kits16, 
+    category: "Towel Kit" 
+  },
+  { 
+    id: 48, 
+    name: "Hand Towel Set 4", 
+    description: "Bold & Bright. A premium stack of berry-red cotton towels designed to add a pop of energy and artisanal warmth to your vanity.", 
+    img: kits17, 
+    category: "Towel Kit" 
+  },
+  { 
+    id: 49, 
+    name: "Hand Towel Set 5", 
+    description: "Tropical Refresh. A light teal, bamboo-blend towel that brings a cooling, coastal breeze to your daily self-care ritual.", 
+    img: kits18, 
+    category: "Towel Kit" 
+  }
 ];
 
 export default function TowelDetail() {

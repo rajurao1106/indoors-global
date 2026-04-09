@@ -12,10 +12,10 @@ import kits3 from "@/public/Indoor Global Kit/Toiletry kit4.jpg"
 import kits4 from "@/public/Indoor Global Kit/Toiletry kit2.jpg"
 
 const productsData = [
-  { id: 32, name: "Toiletry kit1", description: "Complete eco-friendly toiletry set with jute pouch.", img: kits1, category: "Toiletry Kit" },
-  { id: 33, name: "Toiletry kit3", description: "Essential bamboo grooming items in a travel-friendly kit.", img: kits2, category: "Toiletry Kit" },
-  { id: 34, name: "Toiletry kit4", description: "Premium bathroom essentials kit with organic loofah.", img: kits3, category: "Toiletry Kit" },
-  { id: 35, name: "Toiletry kit2", description: "Handcrafted storage basket with personal care bamboo products.", img: kits4, category: "Toiletry Kit" }
+  { id: 32, name: "Toiletry kit1", description: "This kit is for the eco-conscious traveler. Featuring a hand-carved wooden comb, a bamboo toothbrush, and a classic metal razor, all tucked into a breathable jute drawstring bag. It’s everything you need for a zero-waste grooming routine, whether you're in a hotel or a hiking trail.", img: kits1, category: "Toiletry Kit" },
+  { id: 33, name: "Toiletry kit3", description: "Why go to a spa when the spa can come to you? This premium kit is housed in a luxury floral-accented wicker basket. It features natural cotton buds, a biodegradable loofah, a bamboo brush, and a safety razor. It’s the perfect gift for someone who deserves a bathroom upgrade that feels as good as it looks.", img: kits2, category: "Toiletry Kit" },
+  { id: 34, name: "Toiletry kit4", description: "Strip back the plastic and elevate your morning ritual. This set features a hand-carved wooden comb for a static-free hair day, a bamboo tongue cleaner, and a biodegradable toothbrush. Paired with a sleek safety razor and a textured jute pouch, it’s the ultimate kit for the modern man or woman who believes that style shouldn't cost the Earth.", img: kits3, category: "Toiletry Kit" },
+  { id: 35, name: "Toiletry kit2", description: "Transform your bathroom into a tranquil sanctuary. This comprehensive kit includes bamboo cotton buds, an exfoliating natural loofah, and a bamboo-handle razor. Presented in a hand-woven seagrass basket with a floral-printed base, it’s a beautiful reminder that self-care feels better when it’s sustainable.", img: kits4, category: "Toiletry Kit" }
 ];
 
 export default function ToiletryDetail() {

@@ -16,21 +16,21 @@ const productsData = [
   {
     id: 1,
     name: "Children's kit 1",
-    description: 'Eco-friendly mealtime set with a bamboo cup and handcrafted cane basket.',
+    description: 'Mealtime becomes an adventure! This adorable set features a blush-pink rice-husk tumbler, a bamboo straw, and wooden cutlery (spoon, fork, and serrated knife) all packed into a charming mini wicker basket. Designed for tiny hands and a healthy planet.',
     image: kits10,
     category: "Children Kit"
   },
   {
     id: 2,
     name: "Children's kit 2",
-    description: 'Sustainable dining kit with a pastel bowl, spoon, and bamboo bottle in a jute bag.',
+    description: 'Add some pop to the dinner table with this vibrant dusty-rose set. Crafted from durable rice-husk composite, it includes a square plate, a bowl, a tumbler, and a sleek bamboo-wrapped thermos flask. It’s shatter-proof, eco-friendly, and stylish enough for kids and adults alike.',
     image: kits14,
     category: "Children Kit"
   },
   {
     id: 3,
     name: "Children's kit 3",
-    description: 'Premium kids adventure kit featuring a durable plate, bottle, and carrying bag.',
+    description: 'For those who prefer a modern, neutral aesthetic. This kit features a sleek grey rice-husk plate and mug paired with a bamboo-insulated bottle. Everything fits into a sturdy jute tote bag, making it the perfect companion for school lunches or weekend outings.',
     image: kits13,
     category: "Children Kit"
   },

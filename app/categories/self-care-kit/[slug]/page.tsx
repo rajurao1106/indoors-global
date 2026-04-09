@@ -14,12 +14,48 @@ import rice_husk7 from "@/public/products/Rice Husk/rice-husk7.jpeg"
 import rice_husk9 from "@/public/products/Rice Husk/rice-husk9.jpeg"
 
 const productsData = [
-  { id: 1, name: "Bamboo Bottle", description: "Eco-friendly and reusable bamboo water bottle.", img: bamboo_essentials1, category: "Self-Care Kit" },
-  { id: 27, name: "Dinner Set", description: "Durable and sustainable rice husk dinner plate.", img: rice_husk9, category: "Self-Care Kit" },
-  { id: 7, name: "Ricehusk Spoon", description: "Natural rice husk spoon, a great alternative to plastic.", img: bamboo_essentials7, category: "Self-Care Kit" },
-  { id: 25, name: "Snack plate", description: "Protective and eco-friendly coasters for your drinks.", img: rice_husk7, category: "Self-Care Kit" },
-  { id: 23, name: "Classic Mug", description: "Sustainable and comfortable cup for daily beverages.", img: rice_husk5, category: "Self-Care Kit" },
-  { id: 10, name: "Boat Bag", description: "Biodegradable jute bag for eco-conscious shopping.", img: cane_baskets1, category: "Self-Care Kit" }
+  { 
+    id: 1, 
+    name: "Bamboo Bottle", 
+    description: "Nature’s own insulation. A sleek, earth-born companion to keep you hydrated without the plastic footprint.", 
+    img: bamboo_essentials1, 
+    category: "Self-Care Kit" 
+  },
+  { 
+    id: 27, 
+    name: "Dinner Set", 
+    description: "From harvest to home. A sophisticated dining experience crafted from upcycled rice husks for the conscious host.", 
+    img: rice_husk9, 
+    category: "Self-Care Kit" 
+  },
+  { 
+    id: 7, 
+    name: "Ricehusk Spoon", 
+    description: "Small change, big impact. An ergonomically designed, compostable alternative to single-use plastic cutlery.", 
+    img: bamboo_essentials7, 
+    category: "Self-Care Kit" 
+  },
+  { 
+    id: 25, 
+    name: "Snack Plate", 
+    description: "Serve with a soul. Lightweight, durable, and naturally textured—perfect for guilt-free appetizers and treats.", 
+    img: rice_husk7, 
+    category: "Self-Care Kit" 
+  },
+  { 
+    id: 23, 
+    name: "Classic Mug", 
+    description: "Your morning ritual, redefined. A textured, heat-resistant vessel that brings an earthy warmth to every sip.", 
+    img: rice_husk5, 
+    category: "Self-Care Kit" 
+  },
+  { 
+    id: 10, 
+    name: "Boat Bag", 
+    description: "Carry the future. A heavy-duty, artisanal jute tote designed to replace a thousand plastic bags with style.", 
+    img: cane_baskets1, 
+    category: "Self-Care Kit" 
+  }
 ];
 
 export default function SelfCareDetail() {

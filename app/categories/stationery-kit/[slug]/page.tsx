@@ -13,17 +13,17 @@ const productsData = [
   {
     id: 39,
     name: "Plantable Stationery kit 1",
-    description: "Complete eco-friendly writing set featuring an open notebook and plantable pens.",
+    description: "Stop throwing away your old notebooks! This set features a plantable seed-paper journal that can be buried in soil once filled. Accompanied by pencils and pens with seed capsules, this kit turns your old sketches and notes into a garden of flowers and herbs.",
     img: kits8,
     category: "Stationery Kit"
   },
-  {
-    id: 37,
-    name: "Plantable Stationery kit 2",
-    description: "Premium grow-it-yourself kit with a coffee-husk mug and seed diary.",
-    img: kits6,
-    category: "Stationery Kit"
-  },
+{
+  id: 37,
+  name: "Plantable Stationery Kit 2",
+  description: "Ideas that literally bloom. Sketch your dreams in a seed-embedded diary and sip sustainably from a textured coffee-husk mug.",
+  img: kits6,
+  category: "Stationery Kit"
+},
 ];
 
 export default function StationeryDetail() {

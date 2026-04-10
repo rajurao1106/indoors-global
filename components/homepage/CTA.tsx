@@ -17,10 +17,10 @@ const CTA = () => {
       {/* 3. The Content (Must be relative to sit on top) */}
       <div className="relative max-w-3xl mx-auto text-center z-10">
         <h2 className="text-4xl md:text-5xl text-gray-900 mb-4 tracking-tight font-bold">
-          Get Our Latest Update!
+         Refine Your Living Space.
         </h2>
         <p className="text-gray-700 mb-10 text-lg leading-relaxed">
-          Subscribe to our latest newsletter to get news about special discounts and exclusive offers.
+         Discover curated pieces that blend global sophistication with the comfort of home. Limited collections arriving monthly.
         </p>
 
         {/* Input/Button Group */}

@@ -3,22 +3,22 @@ import { ShieldCheck, Sparkles, Globe, History } from 'lucide-react';
 const features = [
   {
     title: "EXCEPTIONAL CRAFT",
-    icon: <Sparkles className="w-16 h-16 text-[#8B735B]" strokeWidth={1.5} />,
+    icon: <Sparkles className="w-16 h-16 text-[#4CAF50]" strokeWidth={1.5} />,
     description: "Every piece is a masterclass in detail. We collaborate with skilled artisans who blend traditional techniques with modern design to create furniture that stands as art."
   },
   {
     title: "GLOBAL SOURCING",
-    icon: <Globe className="w-16 h-16 text-[#8B735B]" strokeWidth={1.5} />,
+    icon: <Globe className="w-16 h-16 text-[#4CAF50]" strokeWidth={1.5} />,
     description: "We travel the world to bring you unique silhouettes and rare textures. Our collection reflects a global aesthetic, curated specifically for the sophisticated modern home."
   },
   {
     title: "SUSTAINABLE LUXURY",
-    icon: <ShieldCheck className="w-16 h-16 text-[#8B735B]" strokeWidth={1.5} />,
+    icon: <ShieldCheck className="w-16 h-16 text-[#4CAF50]" strokeWidth={1.5} />,
     description: "Conscious living without compromise. We prioritize ethically sourced materials and eco-friendly processes to ensure your home beauty doesn't come at the cost of the planet."
   },
   {
     title: "TIMELESS ENDURANCE",
-    icon: <History className="w-16 h-16 text-[#8B735B]" strokeWidth={1.5} />,
+    icon: <History className="w-16 h-16 text-[#4CAF50]" strokeWidth={1.5} />,
     description: "Design that transcends trends. Our products are engineered for longevity, using premium materials that age gracefully and remain relevant in your home for decades."
   }
 ];

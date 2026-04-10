@@ -21,22 +21,23 @@ export default function Quote() {
       <div className="relative z-10 w-full max-w-4xl bg-white/95 backdrop-blur-sm p-8 md:p-16 shadow-2xl text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-light tracking-[0.2em] text-gray-900 mb-10 uppercase">
-          Lorem Ipsum Dolor
+    Rooted in Nature
         </h2>
 
         {/* Text Content */}
         <div className="space-y-8 text-gray-700 leading-relaxed max-w-2xl mx-auto text-sm md:text-base">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-            ea commodo consequat. 
+            At Indoors Global, we are inspired by the resilience and beauty of 
+            natural elements. Like the bamboo that frames our vision, we believe 
+            in design that is both flexible and enduring. Our curated pieces 
+            are chosen for their ability to breathe life into minimalist spaces 
+            and bring the serenity of the outdoors, indoors.
           </p>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
-            sit amet consectetur adipiscing.
+            We invite you to look beyond the ordinary. Every texture, every 
+            fiber, and every silhouette in our collection is a testament to 
+            our commitment to sustainable elegance and a more conscious way 
+            of living.
           </p>
         </div>
       </div>

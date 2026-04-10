@@ -7,18 +7,18 @@ const AccordionSection = () => {
   // Track which index is currently open. 0 = first one open by default.
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const accordionData = [
+const accordionData = [
     {
-      title: "Business's vision",
-      content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      title: "Global Design Vision",
+      content: "Our vision is to become the ultimate destination for global interior inspiration. We aim to transform every home into a curated masterpiece by sourcing unique, high-quality pieces that tell a story of craftsmanship and worldly elegance."
     },
     {
-      title: "Our mission",
-      content: "Many Desktop Publishing Packages And Web Page Editors Now Use Lorem Ipsum As Their Default Model Text. It has survived not only five centuries, but also the leap into electronic typesetting."
+      title: "Our Commitment to Quality",
+      content: "We don't just sell products; we deliver enduring quality. Our mission is to ensure that every item in the Indoors Global collection meets rigorous standards of durability, sustainability, and aesthetic excellence, ensuring your investment lasts a lifetime."
     },
     {
-      title: "Our support",
-      content: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution."
+      title: "Personalized Client Support",
+      content: "Building your dream home is a journey, and we are here to guide you. From expert styling advice to seamless post-purchase support, our team is dedicated to providing a premium experience that prioritizes your comfort and satisfaction."
     }
   ];
 
@@ -39,8 +39,8 @@ const AccordionSection = () => {
               Inspiration, Innovation,<br /> And Opportunities.
             </h2>
             <p className="text-gray-500 text-sm max-w-md leading-relaxed">
-              Many Desktop Publishing Packages And Web Page Editors Now Use Lorem 
-              Ipsum As Their Default Model Text.
+              Discover how Indoors Global redefines interior spaces through 
+              world-class curation and an unwavering focus on modern lifestyle.
             </p>
           </div>
 

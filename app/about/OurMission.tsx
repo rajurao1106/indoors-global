@@ -32,21 +32,21 @@ export default function OurMission() {
           {/* Paragraphs with Lorem Text */}
           <div className="space-y-6 text-black text-sm md:text-base leading-relaxed font-light">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip.
+              At Indoors Global, we believe that your home should be a reflection 
+              of the world’s finest craftsmanship. Our mission is to bridge the gap 
+              between global design trends and your personal sanctuary, bringing 
+              you a curated selection of premium home essentials.
             </p>
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+            Every piece in our collection is handpicked for its quality, 
+              aesthetic appeal, and ability to transform a space. We collaborate 
+              with artisans and designers worldwide to ensure that sophistication 
+              and comfort live in perfect harmony within your four walls.
             </p>
             <p>
-              Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.
-              Nullam varius, turpis et commodo pharetra, est eros bibendum elit,
-              nec luctus magna felis sollicitudin mauris.
+             From timeless furniture to contemporary accents, we are committed 
+              to helping you create an environment that inspires. Join us in 
+              redefining the art of living, one exquisite detail at a time.
             </p>
           </div>
 

@@ -16,8 +16,7 @@ const Footer = () => {
               <div className="w-30 h-30 max-lg:w-20 max-lg:h-20 mb-2">
                 <Image src={logo} alt="" />
               </div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We specialize in high-performance essentials engineered for maximum longevity. By combining superior craftsmanship with premium materials, we provide reliable products that deliver consistent value and withstand the demands of time.
             </li>
           </ul>
 

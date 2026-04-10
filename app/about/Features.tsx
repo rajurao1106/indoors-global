@@ -1,25 +1,25 @@
-import { ShieldCheck, Zap, RefreshCw, Clock } from 'lucide-react'; // Using Lucide for the icons
+import { ShieldCheck, Sparkles, Globe, History } from 'lucide-react'; 
 
 const features = [
   {
-    title: "STRENGTH",
-    icon: <Zap className="w-16 h-16 text-[#4CAF50]" strokeWidth={1.5} />,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    title: "EXCEPTIONAL CRAFT",
+    icon: <Sparkles className="w-16 h-16 text-[#8B735B]" strokeWidth={1.5} />,
+    description: "Every piece is a masterclass in detail. We collaborate with skilled artisans who blend traditional techniques with modern design to create furniture that stands as art."
   },
   {
-    title: "RENEWABILITY",
-    icon: <RefreshCw className="w-16 h-16 text-[#4CAF50]" strokeWidth={1.5} />,
-    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    title: "GLOBAL SOURCING",
+    icon: <Globe className="w-16 h-16 text-[#8B735B]" strokeWidth={1.5} />,
+    description: "We travel the world to bring you unique silhouettes and rare textures. Our collection reflects a global aesthetic, curated specifically for the sophisticated modern home."
   },
   {
-    title: "SUSTAINABILITY",
-    icon: <ShieldCheck className="w-16 h-16 text-[#4CAF50]" strokeWidth={1.5} />,
-    description: "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna."
+    title: "SUSTAINABLE LUXURY",
+    icon: <ShieldCheck className="w-16 h-16 text-[#8B735B]" strokeWidth={1.5} />,
+    description: "Conscious living without compromise. We prioritize ethically sourced materials and eco-friendly processes to ensure your home beauty doesn't come at the cost of the planet."
   },
   {
-    title: "LONG LIFE",
-    icon: <Clock className="w-16 h-16 text-[#4CAF50]" strokeWidth={1.5} />,
-    description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias."
+    title: "TIMELESS ENDURANCE",
+    icon: <History className="w-16 h-16 text-[#8B735B]" strokeWidth={1.5} />,
+    description: "Design that transcends trends. Our products are engineered for longevity, using premium materials that age gracefully and remain relevant in your home for decades."
   }
 ];
 
@@ -40,7 +40,7 @@ export default function Features() {
             </h3>
             
             {/* Description */}
-            <p className="text-[#666666] text-sm md:text-base leading-relaxed max-w-sm uppercase font-medium">
+            <p className="text-[#666666] text-sm md:text-base leading-relaxed max-w-sm font-light">
               {feature.description}
             </p>
           </div>

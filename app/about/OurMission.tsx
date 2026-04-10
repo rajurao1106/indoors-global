@@ -19,10 +19,10 @@ export default function OurMission() {
       {/* --- RIGHT SIDE: CONTENT CONTAINER --- */}
       <div className="w-full md:w-1/2 bg-[#e8d7c7] text-white p-10 md:p-20 flex flex-col justify-center">
         <div className="max-w-xl animate-fadeIn">
-          {/* Subheading */}
+          {/* Subheading 
           <span className="text-[11px] uppercase tracking-[0.3em] text-black font-medium mb-4 block">
             LOREM IPSUM BRAND
-          </span>
+          </span>*/}
 
           {/* Main Heading */}
           <h2 className="text-4xl md:text-5xl font-medium tracking-wider mb-10 leading-tight">
